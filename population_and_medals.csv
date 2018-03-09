@@ -1,0 +1,249 @@
+Rank,Country,Population,Date,"% of world
+population",Source,medals
+1.0,China,1367470000,10/24/2014,19%,Official population clock,608.0
+2.0,India,1261420000,10/24/2014,17.50%,Population clock,28.0
+3.0,United States,318964000,10/24/2014,4.43%,Official population clock,2827.0
+4.0,Indonesia,252164800,7/1/2014,3.50%,Official estimate,32.0
+5.0,Brazil,203337000,10/24/2014,2.83%,Official population clock,128.0
+6.0,Pakistan,188020000,7/1/2014,2.61%,Official annual projection,10.0
+7.0,Nigeria,178517000,7/1/2014,2.48%,UN projection[6],25.0
+8.0,Bangladesh,157193000,10/24/2014,2.18%,Official population clock,0.0
+9.0,Russian Federation,146149200,8/1/2014,2.03%,Official estimate,0.0
+10.0,Japan,127090000,10/1/2014,1.77%,Monthly official estimate,497.0
+11.0,Mexico,119713203,7/1/2014,1.66%,Official projection,69.0
+12.0,Philippines,100440100,10/24/2014,1.40%,Official population clock,10.0
+13.0,Viet Nam,89708900,7/1/2013,1.25%,Official estimate,0.0
+14.0,Ethiopia,87952991,7/1/2014,1.22%,Official projection,53.0
+15.0,Egypt,87371100,10/24/2014,1.21%,Official population clock,32.0
+16.0,Germany,80767000,12/31/2013,1.12%,Official estimate,855.0
+17.0,Iran,77838800,10/24/2014,1.08%,Official population clock,69.0
+18.0,Turkey,76667864,12/31/2013,1.07%,Annual official estimate,91.0
+19.0,Democratic Republic of Congo,69360000,7/1/2014,0.96%,UN projection,0.0
+20.0,France,66048000,10/1/2014,0.92%,Monthly official estimate,840.0
+21.0,Thailand,64871000,7/1/2014,0.90%,Official estimate,33.0
+22.0,United Kingdom,64105654,7/1/2013,0.89%,Annual official estimate,0.0
+23.0,Italy,60780377,4/30/2014,0.84%,Monthly official estimate,701.0
+24.0,South Africa,54002000,7/1/2014,0.75%,Official estimate,86.0
+25.0,Myanmar,51419420,3/29/2014,0.71%,Preliminary 2014 census result,0.0
+26.0,South Korea,50423955,7/1/2014,0.70%,Official projection,337.0
+27.0,Colombia,47832200,10/24/2014,0.67%,Official population clock,28.0
+28.0,Tanzania,47421786,7/1/2014,0.66%,Official Projection,2.0
+29.0,Spain,46507800,1/1/2014,0.63%,Annual official estimate,154.0
+30.0,Ukraine,42981850,8/1/2014,0.60%,Monthly official estimate,129.0
+31.0,Argentina,42669500,7/1/2014,0.59%,Official annual projection,74.0
+32.0,Kenya,41800000,7/1/2013,0.58%,Annual official estimate,102.0
+33.0,Algeria,38700000,1/1/2014,0.54%,Official estimate,17.0
+34.0,Poland,38496000,12/31/2013,0.53%,Official estimate,306.0
+35.0,Sudan,37289406,7/1/2014,0.52%,Official annual projection,1.0
+36.0,Uganda,36600000,7/1/2014,0.51%,Annual official estimate,7.0
+37.0,Iraq,36004552,7/1/2014,0.50%,Official annual projection,1.0
+38.0,Canada,35540419,7/1/2014,0.49%,Official estimate,501.0
+39.0,Morocco,33414900,10/24/2014,0.46%,Official population clock,23.0
+40.0,Peru,30814175,7/1/2014,0.43%,Official annual projection,4.0
+41.0,Saudi Arabia,30770375,7/1/2014,0.43%,Official annual projection,3.0
+42.0,Uzbekistan,30492800,1/1/2014,0.42%,Official estimate,32.0
+43.0,Malaysia,30378300,10/24/2014,0.42%,Official population clock,11.0
+44.0,Venezuela,30206307,6/30/2014,0.42%,Official annual projection,15.0
+45.0,Ghana,27043093,7/1/2014,0.38%,Official annual projection,4.0
+46.0,Nepal,26494504,6/22/2011,0.37%,Final 2011 census result,0.0
+47.0,Afghanistan,26023100,7/1/2013,0.36%,Official estimate,2.0
+48.0,Yemen,25956000,7/1/2014,0.36%,Official estimate,0.0
+49.0,Mozambique,25041922,7/1/2014,0.35%,Annual official projection,2.0
+50.0,North Korea,25027000,7/1/2014,0.35%,UN projection,56.0
+51.0,Angola,24383301,5/16/2014,0.34%,Preliminary 2014 census result,0.0
+52.0,Australia,23640800,10/24/2014,0.33%,Official population clock,512.0
+53.0,Taiwan,23410280,9/30/2014,0.33%,Monthly official estimate,0.0
+54.0,Côte d'Ivoire,23202000,7/1/2012,0.32%,Official estimate,0.0
+55.0,Syrian Arab Republic,21987000,7/1/2014,0.31%,UN projection[13],0.0
+56.0,Madagascar,21263403,7/1/2012,0.30%,Annual official estimate,0.0
+57.0,Cameroon,20386799,7/1/2012,0.28%,Official estimate,6.0
+58.0,Sri Lanka,20277597,3/21/2012,0.28%,Preliminary 2012 census result,2.0
+59.0,Romania,19942642,1/1/2014,0.28%,Annual official estimate,307.0
+60.0,Chile,17819054,7/1/2014,0.25%,Official annual projection,13.0
+61.0,Kazakhstan,17330000,9/1/2014,0.24%,Monthly official estimate,70.0
+62.0,Burkina Faso,17322796,7/1/2013,0.24%,Official estimate,0.0
+63.0,Niger,17138707,12/10/2012,0.24%,Preliminary 2012 census result,2.0
+64.0,Netherlands,16873600,10/24/2014,0.23%,Official population clock,415.0
+65.0,Ecuador,15852800,10/24/2014,0.22%,Official population clock,2.0
+66.0,Guatemala,15806675,6/30/2014,0.22%,Official estimate,1.0
+67.0,Malawi,15805239,7/1/2014,0.22%,Official annual projection,0.0
+68.0,Mali,15768000,7/1/2014,0.22%,UN projection,0.0
+69.0,Cambodia,15184116,7/1/2014,0.21%,Official annual projection,0.0
+70.0,Zambia,15023315,7/1/2014,0.21%,Official estimate,2.0
+71.0,Senegal,13508715,11/19/2013,0.19%,2013 census result,1.0
+72.0,Chad,13211000,7/1/2014,0.18%,UN projection,0.0
+73.0,Zimbabwe,13061239,8/17/2012,0.18%,2012 Census Result,8.0
+74.0,South Sudan,11384393,7/1/2014,0.16%,Official annual projection,0.0
+75.0,Belgium,11215442,9/1/2014,0.16%,Monthly official estimate,154.0
+76.0,Cuba,11210064,12/31/2013,0.16%,Annual official estimate,225.0
+77.0,Rwanda,10996891,7/1/2014,0.15%,Official annual projection,0.0
+78.0,Greece,10992589,1/1/2014,0.15%,Official estimate,116.0
+79.0,Tunisia,10982754,4/23/2014,0.15%,Preliminary 2014 census result,13.0
+80.0,Somalia,10806000,7/1/2014,0.15%,UN projection,0.0
+81.0,Haiti,10745665,2014,0.15%,Official projection,2.0
+82.0,Guinea,10628972,4/2/2014,0.15%,Preliminary 2014 census result,0.0
+83.0,Czech Republic,10521600,6/30/2014,0.15%,Official quarterly estimate,87.0
+84.0,Portugal,10477800,12/31/2013,0.15%,Annual official estimate,24.0
+85.0,Dominican Republic,10378267,2014,0.14%,Official estimate,7.0
+86.0,"Bolivia, Plurinational State of",10027254,11/21/2012,0.14%,2012 census result,0.0
+87.0,Benin,9988068,7/1/2014,0.14%,Official annual projection,0.0
+88.0,Hungary,9879000,1/1/2014,0.14%,Annual official estimate,498.0
+89.0,Sweden,9716962,8/31/2014,0.14%,Monthly official estimate,652.0
+90.0,Azerbaijan,9540400,8/1/2014,0.13%,Official estimate,43.0
+91.0,Burundi,9530434,7/1/2014,0.13%,Official annual projection,2.0
+92.0,Belarus,9469200,7/1/2014,0.13%,Quarterly official estimate,96.0
+93.0,United Arab Emirates,9446000,7/1/2014,0.13%,UN projection,2.0
+94.0,Honduras,8725111,7/1/2014,0.12%,Annual official estimate,0.0
+95.0,Austria,8527230,4/1/2014,0.12%,Official quarterly estimate,319.0
+96.0,Israel,8238300,8/31/2014,0.11%,Official Monthly Estimate,9.0
+97.0,Switzerland,8183800,6/30/2014,0.11%,Quarterly provisional figure,345.0
+98.0,Tajikistan,8161000,1/1/2014,0.11%,Official estimate,4.0
+99.0,Papua New Guinea,7398500,7/1/2013,0.10%,Annual official estimate,0.0
+100.0,Bulgaria,7245677,12/31/2013,0.10%,Official estimate,224.0
+101.0,* Hong Kong* (China),7234800,7/1/2014,0.10%,Official estimate,0.0
+102.0,Serbia,7146759,1/1/2014,0.10%,Annual official estimate,15.0
+103.0,Togo,6993000,7/1/2014,0.10%,UN projection,1.0
+104.0,Paraguay,6893727,2014,0.10%,Official estimate,1.0
+105.0,Lao People's Democratic Republic,6693300,7/1/2014,0.09%,Annual official projection,0.0
+106.0,Jordan,6646840,10/24/2014,0.09%,Official population clock,1.0
+107.0,Eritrea,6536000,7/1/2014,0.09%,UN projection,1.0
+108.0,El Salvador,6401240,2014,0.09%,Official estimate,0.0
+109.0,Libya,6253000,7/1/2014,0.09%,UN projection,0.0
+110.0,Sierra Leone,6205000,7/1/2014,0.09%,UN projection,0.0
+111.0,Nicaragua,6146400,2013,0.09%,Official estimate,0.0
+112.0,Turkmenistan,5824960,10/24/2014,0.08%,Official population clock,0.0
+113.0,Kyrgyzstan,5776570,2014,0.08%,Official estimate,4.0
+114.0,Denmark,5639719,7/1/2014,0.08%,Quarterly official estimate,195.0
+115.0,Singapore,5469700,7/1/2014,0.08%,Official estimate,5.0
+116.0,Finland,5468609,9/30/2014,0.08%,Monthly official estimate,470.0
+117.0,Slovakia,5415949,12/31/2013,0.08%,Official estimate,36.0
+118.0,Norway,5137679,7/1/2014,0.07%,Quarterly official estimate,520.0
+119.0,Central African Republic,4709000,7/1/2014,0.07%,UN projection,0.0
+120.0,Costa Rica,4667096,7/1/2013,0.07%,Official estimate,4.0
+121.0,Ireland,4609600,4/1/2014,0.06%,Annual official estimate,31.0
+122.0,Congo,4559000,7/1/2014,0.06%,UN projection,0.0
+123.0,* Palestine*,4550368,7/1/2014,0.06%,Official estimate,0.0
+124.0,New Zealand,4536140,10/24/2014,0.06%,Official population clock,120.0
+125.0,Georgia,4490500,1/1/2014,0.06%,Annual official estimate,33.0
+126.0,Liberia,4397000,7/1/2014,0.06%,UN projection,0.0
+127.0,Croatia,4267558,7/1/2012,0.06%,Annual official estimate,44.0
+128.0,Lebanon,4104000,7/1/2012,0.06%,Official estimate,4.0
+129.0,Oman,4071147,10/22/2014,0.06%,Weekly official estimate,0.0
+130.0,Bosnia and Herzegovina,3791622,10/15/2013,0.05%,Preliminary 2013 census result,0.0
+131.0,Panama,3713312,2014,0.05%,Official estimate,3.0
+132.0,* Puerto Rico* (USA),3615086,7/1/2013,0.05%,Official estimate,0.0
+133.0,"Moldova, Republic of",3557600,1/1/2014,0.05%,Official estimate,0.0
+134.0,Mauritania,3545620,7/1/2014,0.05%,Annual official estimate,0.0
+135.0,Uruguay,3404189,6/30/2014,0.05%,Annual official estimate,10.0
+136.0,Kuwait,3065850,7/1/2011,0.04%,Official estimate,2.0
+137.0,Armenia,3009800,6/30/2014,0.04%,Monthly official estimate,14.0
+138.0,Mongolia,2978997,10/24/2014,0.04%,Official population clock,26.0
+139.0,Lithuania,2927310,10/1/2014,0.04%,Monthly official estimate,25.0
+140.0,Albania,2895947,1/1/2014,0.04%,Annual official estimate,0.0
+141.0,Jamaica,2717991,12/31/2013,0.04%,Annual official estimate,77.0
+142.0,Qatar,2187326,9/30/2014,0.03%,Monthly official estimate,5.0
+143.0,Namibia,2113077,8/28/2011,0.03%,Final 2011 census result,4.0
+144.0,Lesotho,2098000,7/1/2014,0.03%,UN projection,0.0
+145.0,"Macedonia, the former Yugoslav Republic of",2065769,12/31/2013,0.03%,Official estimate,0.0
+146.0,Slovenia,2064394,10/24/2014,0.03%,Official population clock,40.0
+147.0,Botswana,2024904,8/22/2011,0.03%,Final 2011 census result,1.0
+148.0,Latvia,1991800,10/1/2014,0.03%,Monthly official estimate,27.0
+149.0,Gambia,1882450,4/15/2013,0.03%,Preliminary 2013 census result,0.0
+150.0,Kosovo,1816891,2014,0.03%,Official annual projection,1.0
+151.0,Guinea-Bissau,1746000,7/1/2014,0.02%,UN projection,0.0
+152.0,Gabon,1711000,7/1/2014,0.02%,UN projection,1.0
+153.0,Equatorial Guinea,1430000,7/1/2013,0.02%,Annual official estimate,0.0
+154.0,Trinidad and Tobago,1328019,1/9/2011,0.02%,2011 census result,19.0
+155.0,Bahrain,1316500,7/1/2014,0.02%,Official annual projection,3.0
+156.0,Estonia,1315819,1/1/2014,0.02%,Official estimate,41.0
+157.0,Mauritius,1261208,7/1/2014,0.02%,Official estimate,1.0
+158.0,Timor-Leste,1212107,7/1/2014,0.02%,Official estimate,0.0
+159.0,Swaziland,1106189,7/1/2014,0.02%,Official projection,0.0
+160.0,Djibouti,886000,7/1/2014,0.01%,UN projection,1.0
+161.0,Fiji,859178,7/1/2013,0.01%,Annual official estimate,1.0
+162.0,Cyprus,858000,1/1/2014,0.01%,Official estimate,1.0
+163.0,* Réunion* (France),840974,1/1/2013,0.01%,Official annual estimate,0.0
+164.0,Guyana,784894,7/1/2010,0.01%,Annual official estimate,1.0
+165.0,Comoros,763952,7/1/2014,0.01%,Official estimate,0.0
+166.0,Bhutan,753160,10/24/2014,0.01%,Official population clock,0.0
+167.0,Montenegro,620029,4/1/2011,0.01%,Final 2011 census result,1.0
+168.0,* Macau* (China),614500,3/31/2014,0.01%,Official quaterly estimate,0.0
+169.0,Western Sahara,586000,7/1/2014,0.01%,UN projection,0.0
+170.0,Solomon Islands,581344,7/1/2013,0.01%,Annual official estimate,0.0
+171.0,Luxembourg,549700,12/31/2013,0.01%,Annual official estimate,4.0
+172.0,Suriname,534189,8/13/2012,0.01%,Preliminary 2012 census result,2.0
+173.0,Cape Verde,518467,7/1/2014,0.01%,Official annual projection,0.0
+0.0,Transnistria,505153,1/1/2014,0.01%,Official estimate,0.0
+174.0,Malta,416055,11/20/2011,0.01%,Preliminary 2011 census result,0.0
+175.0,* Guadeloupe* (France),405739,1/1/2013,0.01%,Official annual estimate,0.0
+176.0,Brunei,393372,6/20/2011,0.01%,Preliminary 2011 census result,0.0
+177.0,* Martinique* (France),386486,1/1/2013,0.01%,Official annual estimate,0.0
+178.0,Bahamas,368390,7/1/2013,0.01%,Annual official estimate,14.0
+179.0,Belize,349728,7/1/2013,0.00%,Official estimate,0.0
+180.0,Maldives,341848,7/1/2014,0.00%,Official estimate,0.0
+181.0,Iceland,328170,10/1/2014,0.00%,Official quaterly estimate,4.0
+0.0,Northern Cyprus,294906,4/30/2006,0.00%,Official census,0.0
+182.0,Barbados,285000,7/1/2013,0.00%,Official estimate,1.0
+183.0,* French Polynesia* (France),268270,8/22/2012,0.00%,Preliminary 2012 census result,0.0
+184.0,Vanuatu,264652,7/1/2013,0.00%,Annual official estimate,0.0
+185.0,* New Caledonia* (France),258958,7/1/2013,0.00%,Annual official estimate,0.0
+0.0,Abkhazia,240705,2011,0.00%,Official census,0.0
+186.0,Franch Guyana,237549,1/1/2011,0.00%,Official annual estimate,0.0
+187.0,* Mayotte* (France),212645,8/21/2012,0.00%,2012 census result,0.0
+188.0,Samoa,187820,11/7/2011,0.00%,Final 2011 census result,1.0
+189.0,São Tomé and Príncipe,187356,5/13/2012,0.00%,2012 census result,0.0
+190.0,Saint Lucia,184000,7/1/2014,0.00%,UN projection,0.0
+191.0,* Guam* (USA),159358,4/1/2010,0.00%,Final 2010 census result,0.0
+192.0,* Curaçao* (Netherlands),150563,3/26/2011,0.00%,2011 census result,0.0
+193.0,Saint Vincent and the Grenadines,109000,7/1/2014,0.00%,UN projection,0.0
+194.0,Kiribati,106461,7/1/2013,0.00%,Annual official estimate,0.0
+195.0,* United States Virgin Islands* (USA),106405,4/1/2010,0.00%,Final 2010 census result,0.0
+196.0,Grenada,103328,5/12/2011,0.00%,2011 census result,2.0
+197.0,Tonga,103252,11/30/2011,0.00%,2011 census result,1.0
+198.0,* Aruba* (Netherlands),101484,9/29/2010,0.00%,2010 census result,0.0
+199.0,Federated States of Micronesia,101351,7/1/2013,0.00%,Annual official estimate,0.0
+200.0,* Jersey* (UK),99000,12/31/2012,0.00%,Annual official estimate,0.0
+201.0,Seychelles,89949,7/1/2013,0.00%,Annual official estimate,0.0
+202.0,Antigua and Barbuda,86295,5/27/2011,0.00%,Preliminary 2011 census result,0.0
+203.0,* Isle of Man* (UK),84497,3/27/2011,0.00%,2011 census result,0.0
+204.0,Andorra,76098,7/1/2013,0.00%,Annual official estimate,0.0
+205.0,Dominica,71293,5/14/2011,0.00%,Preliminary 2011 census result,0.0
+206.0,* Bermuda* (UK),64237,5/20/2010,0.00%,Final 2010 census result,0.0
+207.0,* Guernsey* (UK),63085,3/31/2012,0.00%,Annual official estimate,0.0
+208.0,Greenland,56295,7/1/2014,0.00%,Annual official estimate,0.0
+209.0,Marshall Islands,56086,7/1/2013,0.00%,Annual official estimate,0.0
+210.0,* American Samoa* (USA),55519,4/1/2010,0.00%,Final 2010 census result,0.0
+211.0,* Cayman Islands* (UK),55456,10/10/2010,0.00%,Final 2010 census result,0.0
+212.0,Saint Kitts and Nevis,55000,7/1/2014,0.00%,UN projection,0.0
+213.0,* Northern Mariana Islands* (USA),53883,4/1/2010,0.00%,Final 2010 census result,0.0
+0.0,South Ossetia,51547,1/1/2013,0.00%,Estimate,0.0
+214.0,* Faroe Islands* (Denmark),48723,8/1/2014,0.00%,Monthly official estimate,0.0
+215.0,* Sint Maarten* (Netherlands),37429,1/1/2010,0.00%,Official estimate,0.0
+216.0,Liechtenstein,37132,12/31/2013,0.00%,Semi annual official estimate,10.0
+217.0,* Saint Martin* (France),36979,1/1/2010,0.00%,Official estimate,0.0
+218.0,Monaco,36950,12/31/2013,0.00%,Annual official estimate,0.0
+219.0,San Marino,32727,8/31/2014,0.00%,Monthly official estimate,0.0
+220.0,* Turks and Caicos Islands* (UK),31458,1/25/2012,0.00%,2012 census result,0.0
+221.0,* Gibraltar* (UK),30001,12/31/2012,0.00%,Annual official estimate,0.0
+222.0,* British Virgin Islands* (UK),29537,7/1/2010,0.00%,Annual official estimate,0.0
+223.0,* Åland Islands* (Finland),28875,9/30/2014,0.00%,Official estimate,0.0
+224.0,* Caribbean Netherlands* (Netherlands),23296,1/1/2013,0.00%,Official estimate,0.0
+225.0,Palau,20901,7/1/2013,0.00%,Annual official estimate,0.0
+226.0,* Cook Islands* (NZ),14974,12/1/2011,0.00%,Final 2011 census result,0.0
+227.0,* Anguilla* (UK),13452,5/11/2011,0.00%,Preliminary 2011 census result,0.0
+228.0,* Wallis and Futuna* (France),13135,7/1/2013,0.00%,Annual official estimate,0.0
+229.0,Tuvalu,11323,7/1/2013,0.00%,Annual official estimate,0.0
+230.0,Nauru,10084,10/30/2011,0.00%,2011 census result,0.0
+231.0,* Saint Barthélemy* (France),8938,1/1/2010,0.00%,Official estimate,0.0
+232.0,* Saint Pierre and Miquelon* (France),6081,1/1/2010,0.00%,Official estimate,0.0
+233.0,* Montserrat* (UK),4922,5/12/2011,0.00%,2011 census result,0.0
+234.0,"* Saint Helena, Ascension and Tristan da Cunha* (UK)",4000,7/1/2014,0.00%,UN projection,0.0
+235.0,* Falkland Islands* (UK),3000,7/1/2014,0.00%,UN projection,0.0
+236.0,* Svalbard and Jan Mayen* (Norway),2655,9/1/2012,0.00%,Official estimate,0.0
+237.0,* Norfolk Island* (Australia),2302,8/9/2011,0.00%,2011 census result,0.0
+238.0,* Christmas Island* (Australia),2072,8/9/2011,0.00%,2011 census result,0.0
+239.0,* Niue* (NZ),1613,9/10/2011,0.00%,Final 2011 census result,0.0
+240.0,* Tokelau* (NZ),1411,10/18/2011,0.00%,Final 2011 census result,0.0
+241.0,Vatican City,839,7/1/2012,0.00%,Official estimate,0.0
+242.0,* Cocos (Keeling) Islands* (Australia),550,8/9/2011,0.00%,2011 census result,0.0
+243.0,* Pitcairn Islands* (UK),56,2013,0.00%,Official estimate,0.0
