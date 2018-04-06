@@ -9,11 +9,29 @@
 </head>
 <body>
   ...
-  <button id="change-tableau" onclick="myFunction()"> Mon bouton </button>
+  <button id="change-titre" onclick="myFunction()"> Change Titre </button>
+  <button id="add-data" onclick="addData()"> Ajoute </button>
+  <button id="remove-data" onclick="removeData()"> Enleve </button>
   <canvas id="bar-chart-grouped" width="800" height="450"></canvas>
   <script >
 
-  new Chart(document.getElementById("bar-chart-grouped"), {
+  label = ["ca", "marche", "tres", "bien"];
+  data = {
+      labels: ["1900", "1950", "1999", "2050"],
+      datasets: [
+        {
+          label: "Africa",
+          backgroundColor: "#3e95cd",
+          data: [133,221,783,2478]
+        }, {
+          label: "Europe",
+          backgroundColor: "#8e5ea2",
+          data: [408,547,675,734]
+        }
+      ]
+    };                  
+
+  chart = new Chart(document.getElementById("bar-chart-grouped"), {
     type: 'bar',
     data: {
       labels: ["1900", "1950", "1999", "2050"],
@@ -36,11 +54,31 @@
       }
     }
 });
+
+  function myFunction(){
+    chart.options.title.text = 'new title';
+    chart.update();
+  }
+
+  function addData() {
+    elem = 30;
+    chart.data.labels.push(label);
+    chart.data.datasets.forEach((dataset) => {
+     dataset.data.push(elem);
+  });
+    chart.update();
+}
+
+function removeData() {
+    chart.data.labels.pop();
+    chart.data.datasets.forEach((dataset) => {
+        dataset.data.pop();
+    });
+    chart.update();
+}
+
   </script>
   
-    myFunction = function(){
-    window.alert("blabla");
-  }
   ...
 </body>
 </html>
