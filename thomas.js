@@ -3,29 +3,33 @@ var scatterChartData = {
     datasets: [{
         borderColor: window.chartColors.red,
         backgroundColor: window.chartColors.purple,
-        label: 'Medailles 2',
+        label: 'EUR',
         data: [{
             x: 1,
-            y: -1.711e-2,
+            y: 1,
         }, {
-            x: 1.26,
-            y: -2.708e-2,
+            x: 10,
+            y: 10,
         }, {
             x: 50,
-            y: -2.708e-2,
+            y: 50,
         }, {
             x: 100,
-            y: -3.596e1,
+            y: 100,
         }]
     }]
 };
     
 window.onload = function() {
-    Chart.defaults.global.elements.point.radius=10;
+    //Chart.defaults.global.elements.point.radius=10;
     var ctx = document.getElementById('canvas').getContext('2d');
     window.myScatter = Chart.Scatter(ctx, {
         data: scatterChartData,
         options: {
+            title: {
+				display: true,
+				text: 'Olympic Medals for 2018 Winter Games'
+			},
             scales: {
                 xAxes: [{
                     type: 'linear',
