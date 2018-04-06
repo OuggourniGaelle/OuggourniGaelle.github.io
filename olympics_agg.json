@@ -1,0 +1,136 @@
+{
+"annee": [
+  {
+    "Year": 1924,
+    "Medals_cum": 10,
+    "Participants_cum": 43,
+    "Ratio": 23.25581395348837
+  },
+  {
+    "Year": 1928,
+    "Medals_cum": 12,
+    "Participants_cum": 81,
+    "Ratio": 5.263157894736842
+  },
+  {
+    "Year": 1932,
+    "Medals_cum": 14,
+    "Participants_cum": 89,
+    "Ratio": 25
+  },
+  {
+    "Year": 1936,
+    "Medals_cum": 15,
+    "Participants_cum": 117,
+    "Ratio": 3.571428571428571
+  },
+  {
+    "Year": 1948,
+    "Medals_cum": 20,
+    "Participants_cum": 153,
+    "Ratio": 13.88888888888889
+  },
+  {
+    "Year": 1952,
+    "Medals_cum": 21,
+    "Participants_cum": 179,
+    "Ratio": 3.8461538461538463
+  },
+  {
+    "Year": 1956,
+    "Medals_cum": 21,
+    "Participants_cum": 211,
+    "Ratio": 0
+  },
+  {
+    "Year": 1960,
+    "Medals_cum": 24,
+    "Participants_cum": 237,
+    "Ratio": 11.538461538461538
+  },
+  {
+    "Year": 1964,
+    "Medals_cum": 31,
+    "Participants_cum": 261,
+    "Ratio": 29.166666666666668
+  },
+  {
+    "Year": 1968,
+    "Medals_cum": 40,
+    "Participants_cum": 336,
+    "Ratio": 12
+  },
+  {
+    "Year": 1972,
+    "Medals_cum": 43,
+    "Participants_cum": 376,
+    "Ratio": 7.5
+  },
+  {
+    "Year": 1976,
+    "Medals_cum": 44,
+    "Participants_cum": 411,
+    "Ratio": 2.857142857142857
+  },
+  {
+    "Year": 1980,
+    "Medals_cum": 45,
+    "Participants_cum": 433,
+    "Ratio": 4.545454545454546
+  },
+  {
+    "Year": 1984,
+    "Medals_cum": 48,
+    "Participants_cum": 465,
+    "Ratio": 9.375
+  },
+  {
+    "Year": 1988,
+    "Medals_cum": 50,
+    "Participants_cum": 533,
+    "Ratio": 2.941176470588235
+  },
+  {
+    "Year": 1992,
+    "Medals_cum": 62,
+    "Participants_cum": 642,
+    "Ratio": 11.009174311926607
+  },
+  {
+    "Year": 1994,
+    "Medals_cum": 73,
+    "Participants_cum": 740,
+    "Ratio": 11.224489795918368
+  },
+  {
+    "Year": 1998,
+    "Medals_cum": 88,
+    "Participants_cum": 846,
+    "Ratio": 14.150943396226415
+  },
+  {
+    "Year": 2002,
+    "Medals_cum": 103,
+    "Participants_cum": 960,
+    "Ratio": 13.157894736842104
+  },
+  {
+    "Year": 2006,
+    "Medals_cum": 118,
+    "Participants_cum": 1042,
+    "Ratio": 18.29268292682927
+  },
+  {
+    "Year": 2010,
+    "Medals_cum": 132,
+    "Participants_cum": 1146,
+    "Ratio": 13.461538461538462
+  },
+  {
+    "Year": 2014,
+    "Medals_cum": 150,
+    "Participants_cum": 1253,
+    "Ratio": 16.822429906542055
+  }
+  ]
+}
