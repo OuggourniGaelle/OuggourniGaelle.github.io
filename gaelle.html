@@ -9,9 +9,12 @@
 </head>
 <body>
   ...
-  
+  <button id="change-tableau" onclick="myFunction()"> Mon bouton </button>
   <canvas id="bar-chart-grouped" width="800" height="450"></canvas>
   <script >
+  myFunction(){
+    window.alert("blabla");
+  }
   new Chart(document.getElementById("bar-chart-grouped"), {
     type: 'bar',
     data: {
