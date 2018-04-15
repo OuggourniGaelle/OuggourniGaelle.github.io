@@ -1,0 +1,61 @@
+body{
+font-family: 'Roboto', sans-serif;
+}
+
+#remove-data {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#reponse{
+	visibility: hidden;
+}
+
+.general{
+	display: flex;
+	width: 98.5%;
+    top: 100px;
+    
+    flex-direction: row;
+    
+    height: 100%;
+    border-style: solid;
+    position: absolute;}
+
+.text{
+   flex: 1;
+   background: red;
+   flex-direction: column;
+   position: relative;
+   height: 100%;
+   border-style: solid;}
+
+.titretheme{
+	background: blue;
+    flex: 1;
+    height: 25%;
+    /* position: absolute; */
+    align-self: flex-start;
+}
+
+.commentaire{
+	background: orangered;
+    align-self: flex-end;
+    height: 50%;}
+
+.boutons{
+	background: green; 
+    align-self: flex-end;
+    height: 25%;
+
+}
+
+
+.graph {
+    flex: 2;}

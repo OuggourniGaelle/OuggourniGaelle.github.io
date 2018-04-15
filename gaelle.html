@@ -1,84 +1,179 @@
 <!doctype html>
 <html lang="fr">
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <meta charset="utf-8">
   <title>Titre de la page</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gaelle.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
   
 </head>
 <body>
   ...
-  <button id="change-titre" onclick="myFunction()"> Change Titre </button>
-  <button id="add-data" onclick="addData()"> Ajoute </button>
-  <button id="remove-data" onclick="removeData()"> Enleve </button>
-  <canvas id="bar-chart-grouped" width="800" height="450"></canvas>
+  
+  <div class="general">
+
+    <div class="text">
+
+      <div class="titretheme"> 
+          En route vers la parité !
+      </div>
+
+      <div class="commentaire">
+        <p id="pText">Blablabla</p>
+        <button id="reponse" onclick="update_LineData()"> Réponse </button>
+      </div>
+
+      <div class="boutons">
+
+        <button id="chiffres" onclick="ask_Question()"> Quand les chiffres parlent </button>
+        
+        <button id="projections" onclick="update_projectedData()"> Bientôt la parité ? </button>
+
+      </div>
+
+    </div>
+
+    <div class="graph">
+      <canvas id="bar-chart-grouped" width="800" height="450"></canvas>
+    </div>
+
+  </div>
+
   <script >
-
-  label = ["ca", "marche", "tres", "bien"];
-  data = {
-      labels: ["1900", "1950", "1999", "2050"],
+  
+  var commentaire = document.getElementById("commentaire");
+  
+  console.log(commentaire);
+  
+  var summerData = {
+      labels: ["1896", "1900", "1904", "1906", "1908", "1912", "1920", "1924", "1928", "1932", "1936", "1948", "1952", "1956", "1960", "1964", "1968", "1972", "1976", "1980", "1984", "1988", "1992", "1996", "2000", "2004", "2008", "2012", "2016"],
       datasets: [
         {
-          label: "Africa",
-          backgroundColor: "#3e95cd",
-          data: [133,221,783,2478]
+          label: "Women",
+          backgroundColor: "#DC143C",
+          data: [0, 23, 6, 6, 44, 53, 78, 156, 312, 201, 361, 446, 521, 371, 613, 680, 783, 1060, 1260, 1123, 1567, 2203, 2721, 3521, 4068, 4303, 4610, 4653, 5036]
         }, {
-          label: "Europe",
-          backgroundColor: "#8e5ea2",
-          data: [408,547,675,734]
+          label: "Men",
+          backgroundColor: "#6495ED",
+          data: [176, 1201, 644, 835, 1980, 2354, 2599, 3100, 2937, 1721, 4123, 3950, 4411, 2818, 4738, 4457, 4775, 6053, 4812, 4135, 5224, 6249, 6659, 6820, 6579, 6257, 6290, 5864, 6145]
+        },
+        {
+          label: 'Line Dataset',
+          data: [, , , , , , , , , , , , , , , , , , , , , , ],
+
+          // Changes this dataset to become a line
+          type: 'line'
         }
       ]
-    };                  
+    };
 
-  chart = new Chart(document.getElementById("bar-chart-grouped"), {
+  var summerDataLine = {
+      labels: ["1896", "1900", "1904", "1906", "1908", "1912", "1920", "1924", "1928", "1932", "1936", "1948", "1952", "1956", "1960", "1964", "1968", "1972", "1976", "1980", "1984", "1988", "1992", "1996", "2000", "2004", "2008", "2012", "2016"],
+      datasets: [
+        {
+          label: "Women",
+          backgroundColor: "#DC143C",
+          data: [0, 23, 6, 6, 44, 53, 78, 156, 312, 201, 361, 446, 521, 371, 613, 680, 783, 1060, 1260, 1123, 1567, 2203, 2721, 3521, 4068, 4303, 4610, 4653, 5036]
+        }, {
+          label: "Men",
+          backgroundColor: "#6495ED",
+          data: [176, 1201, 644, 835, 1980, 2354, 2599, 3100, 2937, 1721, 4123, 3950, 4411, 2818, 4738, 4457, 4775, 6053, 4812, 4135, 5224, 6249, 6659, 6820, 6579, 6257, 6290, 5864, 6145]
+        },
+        {
+          label: 'Line Dataset',
+          data: [, , , , 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000],
+
+          // Changes this dataset to become a line
+          type: 'line'
+        }
+      ]
+    };
+
+  var predictedData = {
+      labels: ["1924", "1928", "1932", "1936", "1948", "1952", "1956", "1960", "1964", "1968", "1972", "1976", "1980", "1984", "1988", "1992", "1994", "1998", "2002", "2006", "2010", "2014"],
+      datasets: [
+        {
+          label: "Women",
+          backgroundColor: "#DC143C",
+          data: [13, 28, 21, 80, 77, 109, 132, 144, 200, 211, 206, 231, 235, 277, 315, 488, 522, 789, 886, 955, 1033, 1103]
+        }, {
+          label: "Men",
+          backgroundColor: "#6495ED",
+          data: [300, 433, 231, 588, 591, 585, 689, 521, 894, 949, 802, 897, 837, 996, 1107, 1312, 1215, 1390, 1513, 1539, 1503, 1643]
+        }
+      ]
+    };
+
+
+
+  var chart = new Chart(document.getElementById("bar-chart-grouped"), {
     type: 'bar',
-    data: {
-      labels: ["1900", "1950", "1999", "2050"],
-      datasets: [
-        {
-          label: "Africa",
-          backgroundColor: "#3e95cd",
-          data: [133,221,783,2478]
-        }, {
-          label: "Europe",
-          backgroundColor: "#8e5ea2",
-          data: [408,547,675,734]
-        }
-      ]
-    },
+    data: summerData,
     options: {
+      scales: {
+        xAxes: [{
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Années'
+          }
+        }],
+        yAxes: [{
+          display: true,
+          ticks: {
+            beginAtZero: true,
+            stepValue: 1000,
+            max: 7000
+          },
+          scaleLabel: {
+            display: true,
+            labelString: 'Nombre de participants'
+          }
+        }]
+      },
       title: {
         display: true,
-        text: 'Population growth (millions)'
+        text: "Évolution du nombre de participants aux JO d'été"
       }
     }
 });
 
-  function myFunction(){
-    chart.options.title.text = 'new title';
+function update_projectedData() {
+    chart.config.data = predictedData;
+    chart.options.title.text = "Prédictions";
     chart.update();
-  }
-
-  function addData() {
-    elem = 30;
-    chart.data.labels.push(label);
-    chart.data.datasets.forEach((dataset) => {
-     dataset.data.push(elem);
-  });
-    chart.update();
+    var fieldNameElement = document.getElementById('pText');
+    fieldNameElement.innerHTML = "La parité atteinte dans 3 JOs ";
 }
 
-function removeData() {
-    chart.data.labels.pop();
-    chart.data.datasets.forEach((dataset) => {
-        dataset.data.pop();
-    });
+function update_LineData() {
+    chart.data.datasets[2].data = [, , , , 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000,];
+    chart.options.title.text = "Plus de 80 ans ...";
     chart.update();
+    
+    var fieldNameElement = document.getElementById('pText');
+    fieldNameElement.innerHTML = "Plus de 80 ans ...";
+
+    var fieldReponse = document.getElementById("reponse")
+    fieldReponse.style.visibility = "hidden";
 }
+
+function update_summerData() {
+    chart.options.title.text = "En route vers la parité ! ";
+    chart.update();
+
+}
+
+function ask_Question() {
+    var fieldNameElement = document.getElementById('pText');
+    fieldNameElement.innerHTML = "Les hommes ont atteint 2 000 participants en 1908 … Combien de temps a-t-il fallu attendre pour qu’il y ait au moins 2 000 participantes aux Jeux Olympiques ?";
+    var fieldReponse = document.getElementById("reponse")
+    fieldReponse.style.visibility = "visible";
+}
+
 
   </script>
-  
-  ...
+
 </body>
 </html>
