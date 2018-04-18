@@ -74,7 +74,6 @@ font-family: 'Roboto', sans-serif;
 	vertical-align: middle;
     height: 25%;
     color: white;
-    border-radius: 10px;
 }
 
 
@@ -82,3 +81,10 @@ font-family: 'Roboto', sans-serif;
     flex: 2;
     align-self:center;
     margin-left:5px;}
+
+.flaticon{
+	font-size: 10%;
+	position: absolute;
+	bottom: 1px;
+	
+}
