@@ -58,7 +58,7 @@ font-family: 'Roboto', sans-serif;
 
 .boutons{
 	background: green; 
-    align-self: flex-end;
+    align-self: center;
 		text-align: center;
 	vertical-align: middle;
     height: 25%;
