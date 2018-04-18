@@ -50,8 +50,8 @@ font-family: 'Roboto', sans-serif;
 }
 
 .texttitretheme{
-	display: table-cell;
-	vertical-align: middle;
+	display: flex;
+	aligne-self: center;
 }
 
 .commentaire{
