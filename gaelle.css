@@ -20,7 +20,6 @@ font-family: 'Roboto', sans-serif;
 .general{
 	display: flex;
 	width: 98.5%;
-    top: 100px;
     
     flex-direction: row;
     
