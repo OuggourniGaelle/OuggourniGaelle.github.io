@@ -38,10 +38,12 @@ font-family: 'Roboto', sans-serif;
 
 .titretheme{
 	background: blue;
-    flex: 1;
-    height: 25%;
-    /* position: absolute; */
-    align-self: flex-start;
+    	flex: 1;
+    	height: 25%;
+    	/* position: absolute; */
+    	align-self: flex-start;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .commentaire{
