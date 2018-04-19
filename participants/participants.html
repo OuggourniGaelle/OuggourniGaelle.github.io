@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.6.0/d3.js"></script>
+<script src="./participants.js"></script>
+
+<button class="chart-example" id="changeData" onclick="changeData()">x Competitions</button>
+<div class="chart-example" id="chart"><svg></svg></div>
+
+<script>
+console.log('hello');
+
+d3.csv('participants3.csv', function(error, data) {
+    if (error) {
+        console.error('Error getting or parsing the data.');
+        throw error;
+    }
+    // selection.datum() returns the bound datum for the first element in the selection and
+    //  doesn't join the specified array of data with the selected elements
+    var chart = bubbleChart().width(1600).height(1000);
+    d3.select('#chart').datum(data).call(chart);
+});
+var number = 4,
+increase = true;
+function changeData(){
+
+    d3.csv('participants3.csv', function(error, data) {
+        if (error) {
+            console.error('Error getting or parsing the data.');
+            throw error;
+        }
+        //on ne garde que les données pour lesquels la participation est sup a number
+        var filteredData = data.filter(function(d){
+            return d.Participations > number ;
+        });
+        if((increase && number < 10)||(!increase && number < 4)){
+            increase = true;
+            number += 1;
+        }
+        else {
+            increase = false;
+            number -= 1;
+        }
+        //Replace value in the button
+        document.getElementById("changeData").innerHTML = parseInt(number) + ' Competitons';
+
+        //TODO: match case for strength
+        if(!increase){
+            // console.log("test")
+            var chart = bubbleChart().width(1600).height(1000);
+            d3.select('#chart').datum(filteredData).call(chart);
+        }
+
+        //rejoin data
+        var circle = d3.select('#chart').selectAll("circle")
+        .data(filteredData);
+
+        if(increase) {
+            circle.exit().remove();//remove unneeded circles
+        }
+
+        var force = -10;
+        d3.forceSimulation(filteredData)
+            .force("charge", d3.forceManyBody().strength([force]))
+            .force("x", d3.forceX())
+            .force("y", d3.forceY());
+    });
+}
+
+</script>
