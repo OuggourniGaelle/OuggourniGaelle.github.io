@@ -20,42 +20,71 @@ font-family: 'Roboto', sans-serif;
 .general{
 	display: flex;
 	width: 98.5%;
-    top: 100px;
     
     flex-direction: row;
     
     height: 100%;
-    border-style: solid;
+	align-content:center;
     position: absolute;}
 
 .text{
+	background: #696969;
    flex: 1;
-   background: red;
    flex-direction: column;
    position: relative;
    height: 100%;
-   border-style: solid;}
+   align-content:center;
+   margin-right:15px;
+}
 
 .titretheme{
-	background: blue;
-    flex: 1;
-    height: 25%;
-    /* position: absolute; */
-    align-self: flex-start;
+	display:flex;
+		background: #696969;
+    	flex: 1;
+    	height: 25%;
+    	flex-direction: column;
+    	/* position: absolute; */
+		text-align: center;
+		align-items:center;
+			
+}
+
+.texttitretheme{
+	display:flex;
+	flex: 1;
+	height: 1%;
+
+	align-self:center;
+	font-size: 200%;
+	color: #F8F8FF;
 }
 
 .commentaire{
-	background: orangered;
-    align-self: flex-end;
-    height: 50%;}
+	background: #696969;
+    align-self: center;
+		text-align: center;
+	vertical-align: middle;
+    height: 50%;
+    color: #F8F8FF;}
 
 .boutons{
-	background: green; 
-    align-self: flex-end;
+	background: #696969; 
+    align-self: center;
+		text-align: center;
+	vertical-align: middle;
     height: 25%;
-
+    color: white;
 }
 
 
 .graph {
-    flex: 2;}
+    flex: 2;
+    align-self:center;
+    margin-left:5px;}
+
+.flaticon{
+	font-size: 10%;
+	position: absolute;
+	bottom: 1px;
+	
+}

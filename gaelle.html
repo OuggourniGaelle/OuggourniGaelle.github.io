@@ -9,18 +9,18 @@
   
 </head>
 <body>
-  ...
   
   <div class="general">
 
     <div class="text">
 
       <div class="titretheme"> 
-          En route vers la parité !
+        <p class="texttitretheme"> En route vers la parité ! </p>
       </div>
 
       <div class="commentaire">
-        <p id="pText">Blablabla</p>
+        
+        <img src="women_men.png" alt="women_men" class="img" id="img">
         <button id="reponse" onclick="update_LineData()"> Réponse </button>
       </div>
 
@@ -37,8 +37,8 @@
     <div class="graph">
       <canvas id="bar-chart-grouped" width="800" height="450"></canvas>
     </div>
-
   </div>
+  <div class="flaticon">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
   <script >
   
@@ -179,6 +179,9 @@ function ask_Question() {
     fieldNameElement.innerHTML = "Les hommes ont atteint 2 000 participants en 1908 … Combien de temps a-t-il fallu attendre pour qu’il y ait au moins 2 000 participantes aux Jeux Olympiques ?";
     var fieldReponse = document.getElementById("reponse")
     fieldReponse.style.visibility = "visible";
+  
+    var fieldRImage = document.getElementById("img")
+    fieldRImage.style.visibility = "hidden";
 }
 
 
