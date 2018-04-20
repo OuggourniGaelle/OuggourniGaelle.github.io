@@ -14,7 +14,9 @@ font-family: 'Roboto', sans-serif;
 }
 
 #reponse{
+	align-self: center;
 	visibility: hidden;
+
 }
 
 .general{
@@ -59,7 +61,14 @@ font-family: 'Roboto', sans-serif;
 	color: #F8F8FF;
 }
 
+#pText{
+	text-align: center;
+	align-self: center;
+}
+
 .commentaire{
+	display:flex;
+	flex-direction: column;
 	background: #696969;
     align-self: center;
 		text-align: center;
@@ -87,4 +96,12 @@ font-family: 'Roboto', sans-serif;
 	position: absolute;
 	bottom: 1px;
 	
+}
+
+.img{
+	align-self:center;
+}
+
+#bleu{
+	color:#F0F8FF;
 }

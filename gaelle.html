@@ -15,13 +15,17 @@
     <div class="text">
 
       <div class="titretheme"> 
+        
         <p class="texttitretheme"> En route vers la parité ! </p>
+      
       </div>
 
       <div class="commentaire">
         
+        <p id='pText'>  </p>
         <img src="women_men.png" alt="women_men" class="img" id="img">
         <button id="reponse" onclick="update_LineData()"> Réponse </button>
+      
       </div>
 
       <div class="boutons">
@@ -51,11 +55,11 @@
       datasets: [
         {
           label: "Women",
-          backgroundColor: "#DC143C",
+          backgroundColor: "#FF69B4",
           data: [0, 23, 6, 6, 44, 53, 78, 156, 312, 201, 361, 446, 521, 371, 613, 680, 783, 1060, 1260, 1123, 1567, 2203, 2721, 3521, 4068, 4303, 4610, 4653, 5036]
         }, {
           label: "Men",
-          backgroundColor: "#6495ED",
+          backgroundColor: "#00CED1",
           data: [176, 1201, 644, 835, 1980, 2354, 2599, 3100, 2937, 1721, 4123, 3950, 4411, 2818, 4738, 4457, 4775, 6053, 4812, 4135, 5224, 6249, 6659, 6820, 6579, 6257, 6290, 5864, 6145]
         },
         {
@@ -171,17 +175,17 @@ function update_LineData() {
 function update_summerData() {
     chart.options.title.text = "En route vers la parité ! ";
     chart.update();
-
 }
 
 function ask_Question() {
-    var fieldNameElement = document.getElementById('pText');
-    fieldNameElement.innerHTML = "Les hommes ont atteint 2 000 participants en 1908 … Combien de temps a-t-il fallu attendre pour qu’il y ait au moins 2 000 participantes aux Jeux Olympiques ?";
-    var fieldReponse = document.getElementById("reponse")
-    fieldReponse.style.visibility = "visible";
+  var fieldNameElement = document.getElementById('pText');
+  fieldNameElement.innerHTML = " Les <span style='color: #00CED1;'> hommes</span> ont atteint <span style='color: #00CED1;'> 2 000 participants </span> en <span style='color: #00CED1;'>1908</span> … Combien de temps a-t-il fallu attendre pour qu’il y ait au moins <span style='color: #FF69B4;'>2 000 participantes <span>aux Jeux Olympiques ?";
   
-    var fieldRImage = document.getElementById("img")
-    fieldRImage.style.visibility = "hidden";
+  var fieldReponse = document.getElementById("reponse")
+  fieldReponse.style.visibility = "visible";
+  
+  var fieldRImage = document.getElementById("img")
+  fieldRImage.style.visibility = "hidden";
 }
 
 
