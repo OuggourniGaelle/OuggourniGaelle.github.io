@@ -15,8 +15,8 @@ font-family: 'Roboto', sans-serif;
 
 #reponse{
 	align-self: center;
-	display:flex;
 	visibility: hidden;
+
 }
 
 .general{
@@ -62,10 +62,14 @@ font-family: 'Roboto', sans-serif;
 }
 
 #pText{
+	text-align: center;
+	align-self: center;
 visibility: hidden;
 }
 
 .commentaire{
+	display:flex;
+	flex-direction: column;
 	background: #696969;
     align-self: center;
 		text-align: center;
