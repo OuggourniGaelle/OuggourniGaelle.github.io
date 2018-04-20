@@ -22,7 +22,7 @@
 
       <div class="commentaire">
         
-        <p id='pText'> En route vers la parité ! </p>
+        <p id='pText'> Les hommes ont atteint 2 000 participants en 1908 … Combien de temps a-t-il fallu attendre pour qu’il y ait au moins 2 000 participantes aux Jeux Olympiques ? </p>
         <img src="women_men.png" alt="women_men" class="img" id="img">
         <button id="reponse" onclick="update_LineData()"> Réponse </button>
       
@@ -179,7 +179,7 @@ function update_summerData() {
 
 function ask_Question() {
   var fieldNameElement = document.getElementById('pText');
-  fieldNameElement.innerHTML = "Les hommes ont atteint 2 000 participants en 1908 … Combien de temps a-t-il fallu attendre pour qu’il y ait au moins 2 000 participantes aux Jeux Olympiques ?";
+  fieldNameElement.style.visibility = "visible";
   
   var fieldReponse = document.getElementById("reponse")
   fieldReponse.style.visibility = "visible";
