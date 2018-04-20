@@ -124,6 +124,7 @@ circle {
 }
 
 #gender-reponse{
+    align-self: center;
 	visibility: hidden;
 }
 
@@ -135,7 +136,8 @@ circle {
 
     height: 100%;
 	align-content:center;
-    position: absolute;}
+    position: absolute;
+}
 
 .gender-text{
 	background: #696969;
@@ -149,13 +151,13 @@ circle {
 
 .gender-titretheme{
 	display:flex;
-		background: #696969;
-    	flex: 1;
-    	height: 25%;
-    	flex-direction: column;
-    	/* position: absolute; */
-		text-align: center;
-		align-items:center;
+	background: #696969;
+	flex: 1;
+	height: 25%;
+	flex-direction: column;
+	/* position: absolute; */
+	text-align: center;
+	align-items:center;
 
 }
 
@@ -169,32 +171,48 @@ circle {
 	color: #F8F8FF;
 }
 
+#pText{
+	text-align: center;
+	align-self: center;
+}
+
 .gender-commentaire{
+    display:flex;
+	flex-direction: column;
 	background: #696969;
     align-self: center;
-		text-align: center;
+	text-align: center;
 	vertical-align: middle;
     height: 50%;
-    color: #F8F8FF;}
+    color: #F8F8FF;
+}
 
 .gender-boutons{
 	background: #696969;
     align-self: center;
-		text-align: center;
+	text-align: center;
 	vertical-align: middle;
     height: 25%;
     color: white;
 }
 
-
 .gender-graph {
     flex: 2;
     align-self:center;
-    margin-left:5px;}
+    margin-left:5px;
+}
 
 .gender-flaticon{
 	font-size: 10%;
 	position: absolute;
 	bottom: 1px;
 
+}
+
+.gender-img{
+	align-self:center;
+}
+
+#bleu{
+	color:#F0F8FF;
 }
