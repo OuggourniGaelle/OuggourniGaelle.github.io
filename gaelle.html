@@ -15,13 +15,17 @@
     <div class="text">
 
       <div class="titretheme"> 
+        
         <p class="texttitretheme"> En route vers la parité ! </p>
+      
       </div>
 
       <div class="commentaire">
         
+        <p id='pText'> En route vers la parité ! </p>
         <img src="women_men.png" alt="women_men" class="img" id="img">
         <button id="reponse" onclick="update_LineData()"> Réponse </button>
+      
       </div>
 
       <div class="boutons">
@@ -171,17 +175,17 @@ function update_LineData() {
 function update_summerData() {
     chart.options.title.text = "En route vers la parité ! ";
     chart.update();
-
 }
 
 function ask_Question() {
-    var fieldNameElement = document.getElementById('pText');
-    fieldNameElement.innerHTML = "Les hommes ont atteint 2 000 participants en 1908 … Combien de temps a-t-il fallu attendre pour qu’il y ait au moins 2 000 participantes aux Jeux Olympiques ?";
-    var fieldReponse = document.getElementById("reponse")
-    fieldReponse.style.visibility = "visible";
+  var fieldNameElement = document.getElementById('pText');
+  fieldNameElement.innerHTML = "Les hommes ont atteint 2 000 participants en 1908 … Combien de temps a-t-il fallu attendre pour qu’il y ait au moins 2 000 participantes aux Jeux Olympiques ?";
   
-    var fieldRImage = document.getElementById("img")
-    fieldRImage.style.visibility = "hidden";
+  var fieldReponse = document.getElementById("reponse")
+  fieldReponse.style.visibility = "visible";
+  
+  var fieldRImage = document.getElementById("img")
+  fieldRImage.style.visibility = "hidden";
 }
 
 

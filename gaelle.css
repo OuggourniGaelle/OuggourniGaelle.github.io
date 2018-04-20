@@ -59,6 +59,10 @@ font-family: 'Roboto', sans-serif;
 	color: #F8F8FF;
 }
 
+#pText{
+visibility: hidden;
+}
+
 .commentaire{
 	background: #696969;
     align-self: center;
