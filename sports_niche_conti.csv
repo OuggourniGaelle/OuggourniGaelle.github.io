@@ -1,0 +1,728 @@
+Country,Sport,Year,Participants,ContinentCode
+United States,Rugby,1900,1,North America
+United States,Polo,1900,4,North America
+United States,Golf,1900,8,North America
+Spain,Basque Pelota,1900,2,Europe
+Mexico,Polo,1900,3,North America
+Haiti,Rugby,1900,1,North America
+Greece,Golf,1900,1,Europe
+Great Britain,Rugby,1900,15,Europe
+Great Britain,Polo,1900,6,Europe
+Great Britain,Golf,1900,5,Europe
+Great Britain,Cricket,1900,21,Europe
+Germany,Rugby,1900,15,Europe
+France,Tug-Of-War,1900,2,Europe
+France,Rugby,1900,12,Europe
+France,Polo,1900,7,Europe
+France,Golf,1900,7,Europe
+France,Croquet,1900,9,Europe
+France,Cricket,1900,3,Europe
+Denmark,Tug-Of-War,1900,2,Europe
+Colombia,Tug-Of-War,1900,1,South America
+United States,Tug-Of-War,1904,13,North America
+United States,Roque,1904,4,North America
+United States,Lacrosse,1904,12,North America
+United States,Golf,1904,69,North America
+South Africa,Tug-Of-War,1904,5,Africa
+Greece,Tug-Of-War,1904,3,Europe
+Great Britain,Golf,1904,2,Europe
+Canada,Lacrosse,1904,24,North America
+Canada,Golf,1904,3,North America
+Sweden,Tug-Of-War,1906,5,Europe
+Greece,Tug-Of-War,1906,5,Europe
+United States,Jeu De Paume,1908,2,North America
+Sweden,Tug-Of-War,1908,8,Europe
+Great Britain,Tug-Of-War,1908,21,Europe
+Great Britain,Rugby,1908,15,Europe
+Great Britain,Racquets,1908,5,Europe
+Great Britain,Polo,1908,12,Europe
+Great Britain,Motorboating,1908,13,Europe
+Great Britain,Lacrosse,1908,12,Europe
+Great Britain,Jeu De Paume,1908,7,Europe
+France,Motorboating,1908,1,Europe
+Canada,Lacrosse,1908,12,North America
+Australasia,Rugby,1908,15,Asia
+Sweden,Tug-Of-War,1912,8,Europe
+Great Britain,Tug-Of-War,1912,8,Europe
+United States,Tug-Of-War,1920,8,North America
+United States,Rugby,1920,14,North America
+United States,Polo,1920,4,North America
+Spain,Polo,1920,5,Europe
+Netherlands,Tug-Of-War,1920,8,Europe
+Italy,Tug-Of-War,1920,8,Europe
+Great Britain,Tug-Of-War,1920,8,Europe
+Great Britain,Polo,1920,4,Europe
+France,Rugby,1920,14,Europe
+Belgium,Tug-Of-War,1920,7,Europe
+Belgium,Polo,1920,4,Europe
+United States,Rugby,1924,19,North America
+United States,Polo,1924,4,North America
+Switzerland,Military Ski Patrol,1924,3,Europe
+Sweden,Curling,1924,8,Europe
+Spain,Polo,1924,6,Europe
+Romania,Rugby,1924,16,Europe
+Poland,Military Ski Patrol,1924,3,Europe
+Nepal,Alpinism,1924,1,Asia
+Italy,Military Ski Patrol,1924,4,Europe
+India,Alpinism,1924,7,Asia
+Great Britain,Polo,1924,4,Europe
+Great Britain,Curling,1924,4,Europe
+Great Britain,Alpinism,1924,12,Europe
+France,Rugby,1924,19,Europe
+France,Polo,1924,5,Europe
+France,Military Ski Patrol,1924,3,Europe
+France,Curling,1924,3,Europe
+Finland,Military Ski Patrol,1924,4,Europe
+Czechoslovakia,Military Ski Patrol,1924,3,Europe
+Australia,Alpinism,1924,1,Oceana
+Argentina,Polo,1924,5,South America
+United States,Skeleton,1928,1,North America
+Switzerland,Skeleton,1928,2,Europe
+Italy,Skeleton,1928,2,Europe
+Great Britain,Skeleton,1928,1,Europe
+France,Skeleton,1928,1,Europe
+Austria,Skeleton,1928,2,Europe
+Germany,Alpinism,1932,2,Europe
+Switzerland,Alpinism,1936,1,Europe
+Switzerland,Aeronautics,1936,1,Europe
+Mexico,Polo,1936,4,North America
+Hungary,Polo,1936,5,Europe
+Great Britain,Polo,1936,4,Europe
+Germany,Polo,1936,4,Europe
+Argentina,Polo,1936,4,South America
+United States,Skeleton,1948,4,North America
+Switzerland,Skeleton,1948,4,Europe
+Great Britain,Skeleton,1948,4,Europe
+Austria,Skeleton,1948,1,Europe
+United States,Softball,1996,15,North America
+United States,Beach Volleyball,1996,12,North America
+Sweden,Beach Volleyball,1996,2,Europe
+Spain,Beach Volleyball,1996,4,Europe
+Puerto Rico,Softball,1996,15,North America
+Portugal,Beach Volleyball,1996,2,Europe
+Norway,Beach Volleyball,1996,4,Europe
+New Zealand,Beach Volleyball,1996,2,Oceana
+Netherlands,Softball,1996,15,Europe
+Netherlands,Beach Volleyball,1996,4,Europe
+Mexico,Beach Volleyball,1996,2,North America
+Japan,Softball,1996,15,Asia
+Japan,Beach Volleyball,1996,6,Asia
+Italy,Beach Volleyball,1996,4,Europe
+Indonesia,Beach Volleyball,1996,4,Asia
+Great Britain,Beach Volleyball,1996,2,Europe
+Germany,Beach Volleyball,1996,4,Europe
+France,Beach Volleyball,1996,4,Europe
+Estonia,Beach Volleyball,1996,2,Europe
+Czech Republic,Beach Volleyball,1996,2,Europe
+Cuba,Beach Volleyball,1996,2,North America
+Chinese Taipei,Softball,1996,15,Asia
+China,Softball,1996,15,Asia
+Canada,Softball,1996,15,North America
+Canada,Beach Volleyball,1996,6,North America
+Brazil,Beach Volleyball,1996,8,South America
+Australia,Softball,1996,15,Oceana
+Australia,Beach Volleyball,1996,6,Oceana
+Argentina,Beach Volleyball,1996,2,South America
+United States,Curling,1998,10,North America
+Switzerland,Curling,1998,5,Europe
+Sweden,Curling,1998,10,Europe
+Norway,Curling,1998,10,Europe
+Japan,Curling,1998,10,Asia
+Great Britain,Curling,1998,10,Europe
+Germany,Curling,1998,10,Europe
+Denmark,Curling,1998,5,Europe
+Canada,Curling,1998,10,North America
+Zimbabwe,Triathlon,2000,1,Africa
+Venezuela,Triathlon,2000,1,South America
+Uzbekistan,Trampolining,2000,1,Asia
+United States,Triathlon,2000,6,North America
+United States,Trampolining,2000,1,North America
+United States,Softball,2000,15,North America
+United States,Beach Volleyball,2000,8,North America
+Ukraine,Triathlon,2000,2,Europe
+Ukraine,Trampolining,2000,2,Europe
+Switzerland,Triathlon,2000,6,Europe
+Switzerland,Trampolining,2000,1,Europe
+Switzerland,Beach Volleyball,2000,2,Europe
+Sweden,Triathlon,2000,1,Europe
+Sweden,Beach Volleyball,2000,2,Europe
+Spain,Triathlon,2000,4,Europe
+Spain,Beach Volleyball,2000,2,Europe
+South Africa,Triathlon,2000,2,Africa
+Russia,Triathlon,2000,1,Europe
+Russia,Trampolining,2000,2,Europe
+Russia,Beach Volleyball,2000,2,Europe
+Portugal,Beach Volleyball,2000,4,Europe
+Norway,Beach Volleyball,2000,4,Europe
+New Zealand,Triathlon,2000,4,Oceana
+New Zealand,Softball,2000,15,Oceana
+Netherlands Antilles,Triathlon,2000,1,North America
+Netherlands,Triathlon,2000,6,Europe
+Netherlands,Trampolining,2000,1,Europe
+Netherlands,Beach Volleyball,2000,2,Europe
+Mexico,Beach Volleyball,2000,4,North America
+Luxembourg,Triathlon,2000,1,Europe
+Kazakhstan,Triathlon,2000,2,Asia
+Japan,Triathlon,2000,6,Asia
+Japan,Trampolining,2000,2,Asia
+Japan,Softball,2000,15,Asia
+Japan,Beach Volleyball,2000,4,Asia
+Jamaica,Triathlon,2000,1,North America
+Italy,Triathlon,2000,3,Europe
+Italy,Softball,2000,15,Europe
+Italy,Beach Volleyball,2000,6,Europe
+Hungary,Triathlon,2000,4,Europe
+Greece,Triathlon,2000,1,Europe
+Greece,Beach Volleyball,2000,2,Europe
+Great Britain,Triathlon,2000,6,Europe
+Great Britain,Trampolining,2000,2,Europe
+Germany,Triathlon,2000,4,Europe
+Germany,Trampolining,2000,2,Europe
+Germany,Beach Volleyball,2000,8,Europe
+Georgia,Trampolining,2000,1,Asia
+France,Triathlon,2000,6,Europe
+France,Trampolining,2000,1,Europe
+France,Beach Volleyball,2000,4,Europe
+Denmark,Triathlon,2000,2,Europe
+Czech Republic,Triathlon,2000,4,Europe
+Czech Republic,Trampolining,2000,1,Europe
+Czech Republic,Beach Volleyball,2000,6,Europe
+Cuba,Softball,2000,15,North America
+Cuba,Beach Volleyball,2000,2,North America
+Costa Rica,Triathlon,2000,1,North America
+Colombia,Triathlon,2000,1,South America
+China,Triathlon,2000,2,Asia
+China,Softball,2000,15,Asia
+China,Beach Volleyball,2000,4,Asia
+Chile,Triathlon,2000,1,South America
+Canada,Triathlon,2000,4,North America
+Canada,Trampolining,2000,2,North America
+Canada,Softball,2000,15,North America
+Canada,Beach Volleyball,2000,4,North America
+Bulgaria,Beach Volleyball,2000,2,Europe
+Brazil,Triathlon,2000,6,South America
+Brazil,Beach Volleyball,2000,8,South America
+Belgium,Triathlon,2000,2,Europe
+Belarus,Trampolining,2000,2,Europe
+Austria,Triathlon,2000,1,Europe
+Austria,Beach Volleyball,2000,2,Europe
+Australia,Triathlon,2000,6,Oceana
+Australia,Trampolining,2000,2,Oceana
+Australia,Softball,2000,15,Oceana
+Australia,Beach Volleyball,2000,10,Oceana
+Argentina,Triathlon,2000,1,South America
+Argentina,Beach Volleyball,2000,4,South America
+Algeria,Trampolining,2000,1,Africa
+United States,Skeleton,2002,5,North America
+United States,Curling,2002,10,North America
+Switzerland,Skeleton,2002,3,Europe
+Switzerland,Curling,2002,10,Europe
+Sweden,Curling,2002,9,Europe
+South Korea,Skeleton,2002,1,Asia
+Russia,Skeleton,2002,2,Europe
+Russia,Curling,2002,4,Europe
+Norway,Skeleton,2002,1,Europe
+Norway,Curling,2002,9,Europe
+New Zealand,Skeleton,2002,1,Oceana
+Mexico,Skeleton,2002,1,North America
+Latvia,Skeleton,2002,1,Europe
+Japan,Skeleton,2002,3,Asia
+Japan,Curling,2002,4,Asia
+Italy,Skeleton,2002,2,Europe
+Ireland,Skeleton,2002,1,Europe
+Greece,Skeleton,2002,2,Europe
+Great Britain,Skeleton,2002,2,Europe
+Great Britain,Curling,2002,10,Europe
+Germany,Skeleton,2002,4,Europe
+Germany,Curling,2002,10,Europe
+France,Skeleton,2002,1,Europe
+France,Curling,2002,5,Europe
+Finland,Curling,2002,5,Europe
+Denmark,Curling,2002,10,Europe
+Czech Republic,Skeleton,2002,1,Europe
+Canada,Skeleton,2002,5,North America
+Canada,Curling,2002,10,North America
+Austria,Skeleton,2002,2,Europe
+Argentina,Skeleton,2002,1,South America
+Venezuela,Triathlon,2004,1,South America
+Uzbekistan,Trampolining,2004,1,Asia
+United States,Triathlon,2004,6,North America
+United States,Trampolining,2004,1,North America
+United States,Softball,2004,15,North America
+United States,Beach Volleyball,2004,8,North America
+Ukraine,Triathlon,2004,2,Europe
+Ukraine,Trampolining,2004,2,Europe
+Switzerland,Triathlon,2004,5,Europe
+Switzerland,Trampolining,2004,1,Europe
+Switzerland,Beach Volleyball,2004,6,Europe
+Sweden,Beach Volleyball,2004,2,Europe
+Spain,Triathlon,2004,6,Europe
+Spain,Beach Volleyball,2004,2,Europe
+South Africa,Triathlon,2004,2,Africa
+South Africa,Beach Volleyball,2004,4,Africa
+Slovakia,Trampolining,2004,1,Europe
+Russia,Triathlon,2004,3,Europe
+Russia,Trampolining,2004,4,Europe
+Puerto Rico,Beach Volleyball,2004,2,North America
+Portugal,Triathlon,2004,1,Europe
+Portugal,Trampolining,2004,1,Europe
+Portugal,Beach Volleyball,2004,2,Europe
+Norway,Beach Volleyball,2004,8,Europe
+New Zealand,Triathlon,2004,4,Oceana
+Netherlands,Triathlon,2004,2,Europe
+Netherlands,Trampolining,2004,2,Europe
+Netherlands,Beach Volleyball,2004,2,Europe
+Mexico,Triathlon,2004,2,North America
+Mexico,Beach Volleyball,2004,2,North America
+Luxembourg,Triathlon,2004,1,Europe
+Kazakhstan,Triathlon,2004,3,Asia
+Japan,Triathlon,2004,5,Asia
+Japan,Trampolining,2004,1,Asia
+Japan,Softball,2004,14,Asia
+Japan,Beach Volleyball,2004,2,Asia
+Italy,Triathlon,2004,3,Europe
+Italy,Trampolining,2004,1,Europe
+Italy,Softball,2004,15,Europe
+Italy,Beach Volleyball,2004,2,Europe
+Hungary,Triathlon,2004,1,Europe
+Hong Kong,Triathlon,2004,1,Asia
+Greece,Triathlon,2004,1,Europe
+Greece,Trampolining,2004,1,Europe
+Greece,Softball,2004,14,Europe
+Greece,Beach Volleyball,2004,6,Europe
+Great Britain,Triathlon,2004,6,Europe
+Great Britain,Trampolining,2004,2,Europe
+Germany,Triathlon,2004,5,Europe
+Germany,Trampolining,2004,2,Europe
+Germany,Beach Volleyball,2004,8,Europe
+Georgia,Trampolining,2004,1,Asia
+France,Triathlon,2004,4,Europe
+France,Trampolining,2004,1,Europe
+France,Beach Volleyball,2004,2,Europe
+Estonia,Triathlon,2004,1,Europe
+Denmark,Triathlon,2004,1,Europe
+Denmark,Trampolining,2004,1,Europe
+Czech Republic,Triathlon,2004,5,Europe
+Czech Republic,Beach Volleyball,2004,2,Europe
+Cuba,Beach Volleyball,2004,4,North America
+Colombia,Triathlon,2004,1,South America
+Chinese Taipei,Softball,2004,15,Asia
+China,Triathlon,2004,2,Asia
+China,Trampolining,2004,2,Asia
+China,Softball,2004,15,Asia
+China,Beach Volleyball,2004,4,Asia
+Canada,Triathlon,2004,5,North America
+Canada,Trampolining,2004,3,North America
+Canada,Softball,2004,15,North America
+Canada,Beach Volleyball,2004,4,North America
+Bulgaria,Beach Volleyball,2004,2,Europe
+Brazil,Triathlon,2004,6,South America
+Brazil,Beach Volleyball,2004,8,South America
+Bermuda,Triathlon,2004,1,North America
+Belgium,Triathlon,2004,2,Europe
+Belarus,Trampolining,2004,3,Europe
+Austria,Triathlon,2004,3,Europe
+Austria,Beach Volleyball,2004,4,Europe
+Australia,Triathlon,2004,6,Oceana
+Australia,Trampolining,2004,1,Oceana
+Australia,Softball,2004,15,Oceana
+Australia,Beach Volleyball,2004,8,Oceana
+Argentina,Triathlon,2004,2,South America
+Argentina,Beach Volleyball,2004,2,South America
+United States,Skeleton,2006,4,North America
+United States,Curling,2006,9,North America
+Switzerland,Skeleton,2006,3,Europe
+Switzerland,Curling,2006,9,Europe
+Sweden,Curling,2006,8,Europe
+South Korea,Skeleton,2006,1,Asia
+South Africa,Skeleton,2006,1,Africa
+Russia,Skeleton,2006,2,Europe
+Russia,Curling,2006,5,Europe
+Poland,Skeleton,2006,1,Europe
+Norway,Skeleton,2006,1,Europe
+Norway,Curling,2006,8,Europe
+New Zealand,Skeleton,2006,2,Oceana
+New Zealand,Curling,2006,5,Oceana
+Lebanon,Skeleton,2006,1,Asia
+Latvia,Skeleton,2006,1,Europe
+Japan,Skeleton,2006,3,Asia
+Japan,Curling,2006,5,Asia
+Italy,Skeleton,2006,2,Europe
+Italy,Curling,2006,9,Europe
+Ireland,Skeleton,2006,1,Europe
+Great Britain,Skeleton,2006,3,Europe
+Great Britain,Curling,2006,10,Europe
+Germany,Skeleton,2006,4,Europe
+Germany,Curling,2006,5,Europe
+France,Skeleton,2006,1,Europe
+Finland,Curling,2006,4,Europe
+Denmark,Curling,2006,4,Europe
+Croatia,Skeleton,2006,1,Europe
+Canada,Skeleton,2006,5,North America
+Canada,Curling,2006,10,North America
+Bermuda,Skeleton,2006,1,North America
+Austria,Skeleton,2006,2,Europe
+Australia,Skeleton,2006,2,Oceana
+Zimbabwe,Triathlon,2008,1,Africa
+Venezuela,Softball,2008,15,South America
+Uzbekistan,Trampolining,2008,1,Asia
+United States,Triathlon,2008,6,North America
+United States,Trampolining,2008,2,North America
+United States,Softball,2008,15,North America
+United States,Beach Volleyball,2008,8,North America
+Ukraine,Triathlon,2008,3,Europe
+Ukraine,Trampolining,2008,2,Europe
+Syria,Triathlon,2008,1,Asia
+Switzerland,Triathlon,2008,6,Europe
+Switzerland,Beach Volleyball,2008,6,Europe
+Sweden,Triathlon,2008,1,Europe
+Spain,Triathlon,2008,4,Europe
+Spain,Beach Volleyball,2008,2,Europe
+South Africa,Triathlon,2008,2,Africa
+South Africa,Beach Volleyball,2008,2,Africa
+Slovakia,Triathlon,2008,1,Europe
+Russia,Triathlon,2008,5,Europe
+Russia,Trampolining,2008,4,Europe
+Russia,Beach Volleyball,2008,4,Europe
+Portugal,Triathlon,2008,3,Europe
+Portugal,Trampolining,2008,2,Europe
+Poland,Triathlon,2008,3,Europe
+Norway,Beach Volleyball,2008,6,Europe
+New Zealand,Triathlon,2008,6,Oceana
+Netherlands,Triathlon,2008,2,Europe
+Netherlands,Softball,2008,15,Europe
+Netherlands,Beach Volleyball,2008,6,Europe
+Mexico,Triathlon,2008,2,North America
+Mexico,Beach Volleyball,2008,2,North America
+Luxembourg,Triathlon,2008,2,Europe
+Latvia,Beach Volleyball,2008,2,Europe
+Kazakhstan,Triathlon,2008,1,Asia
+Japan,Triathlon,2008,5,Asia
+Japan,Trampolining,2008,3,Asia
+Japan,Softball,2008,15,Asia
+Japan,Beach Volleyball,2008,4,Asia
+Italy,Triathlon,2008,4,Europe
+Italy,Trampolining,2008,1,Europe
+Italy,Beach Volleyball,2008,2,Europe
+Ireland,Triathlon,2008,1,Europe
+Hungary,Triathlon,2008,2,Europe
+Hong Kong,Triathlon,2008,2,Asia
+Greece,Triathlon,2008,1,Europe
+Greece,Beach Volleyball,2008,4,Europe
+Great Britain,Triathlon,2008,5,Europe
+Great Britain,Trampolining,2008,1,Europe
+Germany,Triathlon,2008,6,Europe
+Germany,Trampolining,2008,2,Europe
+Germany,Beach Volleyball,2008,8,Europe
+Georgia,Trampolining,2008,1,Asia
+Georgia,Beach Volleyball,2008,4,Asia
+France,Triathlon,2008,5,Europe
+France,Trampolining,2008,1,Europe
+Estonia,Triathlon,2008,1,Europe
+Estonia,Beach Volleyball,2008,2,Europe
+Denmark,Triathlon,2008,1,Europe
+Denmark,Trampolining,2008,1,Europe
+Czech Republic,Triathlon,2008,3,Europe
+Czech Republic,Trampolining,2008,1,Europe
+Cuba,Beach Volleyball,2008,4,North America
+Chinese Taipei,Softball,2008,15,Asia
+China,Triathlon,2008,3,Asia
+China,Trampolining,2008,4,Asia
+China,Softball,2008,15,Asia
+China,Beach Volleyball,2008,6,Asia
+Chile,Triathlon,2008,1,South America
+Canada,Triathlon,2008,6,North America
+Canada,Trampolining,2008,3,North America
+Canada,Softball,2008,15,North America
+Brazil,Triathlon,2008,3,South America
+Brazil,Beach Volleyball,2008,8,South America
+Bermuda,Triathlon,2008,1,North America
+Belgium,Triathlon,2008,2,Europe
+Belgium,Beach Volleyball,2008,2,Europe
+Belarus,Trampolining,2008,2,Europe
+Austria,Triathlon,2008,4,Europe
+Austria,Beach Volleyball,2008,6,Europe
+Australia,Triathlon,2008,5,Oceana
+Australia,Trampolining,2008,1,Oceana
+Australia,Softball,2008,15,Oceana
+Australia,Beach Volleyball,2008,4,Oceana
+Argentina,Beach Volleyball,2008,2,South America
+Angola,Beach Volleyball,2008,2,Africa
+United States,Skeleton,2010,5,North America
+United States,Curling,2010,9,North America
+Switzerland,Skeleton,2010,2,Europe
+Switzerland,Curling,2010,9,Europe
+Sweden,Curling,2010,8,Europe
+Spain,Skeleton,2010,1,Europe
+South Korea,Skeleton,2010,1,Asia
+Slovenia,Skeleton,2010,1,Europe
+Russia,Skeleton,2010,4,Europe
+Russia,Curling,2010,5,Europe
+Romania,Skeleton,2010,1,Europe
+Norway,Skeleton,2010,1,Europe
+Norway,Curling,2010,4,Europe
+New Zealand,Skeleton,2010,3,Oceana
+Latvia,Skeleton,2010,2,Europe
+Japan,Skeleton,2010,2,Asia
+Japan,Curling,2010,5,Asia
+Italy,Skeleton,2010,2,Europe
+Ireland,Skeleton,2010,1,Europe
+Great Britain,Skeleton,2010,4,Europe
+Great Britain,Curling,2010,10,Europe
+Germany,Skeleton,2010,6,Europe
+Germany,Curling,2010,10,Europe
+France,Skeleton,2010,1,Europe
+France,Curling,2010,5,Europe
+Denmark,Curling,2010,9,Europe
+China,Curling,2010,9,Asia
+Canada,Skeleton,2010,6,North America
+Canada,Curling,2010,10,North America
+Austria,Skeleton,2010,1,Europe
+Australia,Skeleton,2010,3,Oceana
+Zimbabwe,Triathlon,2012,1,Africa
+Venezuela,Beach Volleyball,2012,2,South America
+Uzbekistan,Trampolining,2012,1,Asia
+United States,Triathlon,2012,5,North America
+United States,Trampolining,2012,2,North America
+United States,Beach Volleyball,2012,8,North America
+Ukraine,Triathlon,2012,2,Europe
+Ukraine,Trampolining,2012,2,Europe
+Switzerland,Triathlon,2012,4,Europe
+Switzerland,Beach Volleyball,2012,6,Europe
+Sweden,Triathlon,2012,1,Europe
+Spain,Triathlon,2012,6,Europe
+Spain,Beach Volleyball,2012,4,Europe
+South Korea,Triathlon,2012,1,Asia
+South Africa,Triathlon,2012,3,Africa
+South Africa,Beach Volleyball,2012,2,Africa
+Slovenia,Triathlon,2012,1,Europe
+Slovakia,Triathlon,2012,1,Europe
+Russia,Triathlon,2012,5,Europe
+Russia,Trampolining,2012,3,Europe
+Russia,Beach Volleyball,2012,6,Europe
+Portugal,Triathlon,2012,2,Europe
+Portugal,Trampolining,2012,2,Europe
+Poland,Triathlon,2012,3,Europe
+Poland,Beach Volleyball,2012,2,Europe
+Norway,Beach Volleyball,2012,2,Europe
+New Zealand,Triathlon,2012,6,Oceana
+Netherlands,Triathlon,2012,2,Europe
+Netherlands,Trampolining,2012,1,Europe
+Netherlands,Beach Volleyball,2012,6,Europe
+Monaco,Triathlon,2012,1,Europe
+Mexico,Triathlon,2012,2,North America
+Mauritius,Triathlon,2012,1,Africa
+Mauritius,Beach Volleyball,2012,2,Africa
+Latvia,Beach Volleyball,2012,4,Europe
+Japan,Triathlon,2012,5,Asia
+Japan,Trampolining,2012,3,Asia
+Japan,Beach Volleyball,2012,2,Asia
+Italy,Triathlon,2012,3,Europe
+Italy,Trampolining,2012,1,Europe
+Italy,Beach Volleyball,2012,4,Europe
+Ireland,Triathlon,2012,2,Europe
+Hungary,Triathlon,2012,1,Europe
+Greece,Beach Volleyball,2012,2,Europe
+Great Britain,Triathlon,2012,6,Europe
+Great Britain,Trampolining,2012,1,Europe
+Great Britain,Beach Volleyball,2012,4,Europe
+Germany,Triathlon,2012,6,Europe
+Germany,Trampolining,2012,2,Europe
+Germany,Beach Volleyball,2012,8,Europe
+Georgia,Trampolining,2012,1,Asia
+France,Triathlon,2012,6,Europe
+France,Trampolining,2012,1,Europe
+Ecuador,Triathlon,2012,1,South America
+Denmark,Triathlon,2012,2,Europe
+Denmark,Trampolining,2012,1,Europe
+Czech Republic,Triathlon,2012,4,Europe
+Czech Republic,Trampolining,2012,1,Europe
+Czech Republic,Beach Volleyball,2012,6,Europe
+Costa Rica,Triathlon,2012,1,North America
+Colombia,Triathlon,2012,1,South America
+China,Triathlon,2012,2,Asia
+China,Trampolining,2012,4,Asia
+China,Beach Volleyball,2012,4,Asia
+Chile,Triathlon,2012,2,South America
+Canada,Triathlon,2012,5,North America
+Canada,Trampolining,2012,3,North America
+Canada,Beach Volleyball,2012,4,North America
+Brazil,Triathlon,2012,3,South America
+Brazil,Beach Volleyball,2012,8,South America
+Bermuda,Triathlon,2012,2,North America
+Belgium,Triathlon,2012,2,Europe
+Belarus,Trampolining,2012,2,Europe
+Austria,Triathlon,2012,2,Europe
+Austria,Beach Volleyball,2012,4,Europe
+Australia,Triathlon,2012,6,Oceana
+Australia,Trampolining,2012,1,Oceana
+Australia,Beach Volleyball,2012,4,Oceana
+Argentina,Triathlon,2012,1,South America
+Argentina,Beach Volleyball,2012,2,South America
+United States,Skeleton,2014,5,North America
+United States,Curling,2014,9,North America
+Switzerland,Skeleton,2014,1,Europe
+Switzerland,Curling,2014,10,Europe
+Sweden,Curling,2014,8,Europe
+Spain,Skeleton,2014,1,Europe
+South Korea,Skeleton,2014,2,Asia
+South Korea,Curling,2014,5,Asia
+Russia,Skeleton,2014,6,Europe
+Russia,Curling,2014,9,Europe
+Romania,Skeleton,2014,2,Europe
+Norway,Curling,2014,4,Europe
+New Zealand,Skeleton,2014,2,Oceana
+Latvia,Skeleton,2014,3,Europe
+Japan,Skeleton,2014,2,Asia
+Japan,Curling,2014,5,Asia
+Italy,Skeleton,2014,1,Europe
+Ireland,Skeleton,2014,1,Europe
+Greece,Skeleton,2014,1,Europe
+Great Britain,Skeleton,2014,4,Europe
+Great Britain,Curling,2014,8,Europe
+Germany,Skeleton,2014,5,Europe
+Germany,Curling,2014,5,Europe
+Denmark,Curling,2014,8,Europe
+China,Curling,2014,8,Asia
+Canada,Skeleton,2014,4,North America
+Canada,Curling,2014,8,North America
+Austria,Skeleton,2014,3,Europe
+Australia,Skeleton,2014,3,Oceana
+Venezuela,Golf,2016,1,South America
+Venezuela,Beach Volleyball,2016,2,South America
+Uzbekistan,Trampolining,2016,1,Asia
+United States,Triathlon,2016,6,North America
+United States,Trampolining,2016,2,North America
+United States,Rugby Sevens,2016,25,North America
+United States,Golf,2016,7,North America
+United States,Beach Volleyball,2016,8,North America
+Ukraine,Triathlon,2016,2,Europe
+Ukraine,Trampolining,2016,1,Europe
+Tunisia,Beach Volleyball,2016,2,Africa
+Thailand,Golf,2016,4,Asia
+Switzerland,Triathlon,2016,4,Europe
+Switzerland,Golf,2016,2,Europe
+Switzerland,Beach Volleyball,2016,4,Europe
+Sweden,Triathlon,2016,1,Europe
+Sweden,Golf,2016,4,Europe
+Spain,Triathlon,2016,6,Europe
+Spain,Rugby Sevens,2016,25,Europe
+Spain,Golf,2016,4,Europe
+Spain,Beach Volleyball,2016,4,Europe
+South Korea,Golf,2016,6,Asia
+South Africa,Triathlon,2016,4,Africa
+South Africa,Rugby Sevens,2016,13,Africa
+South Africa,Golf,2016,4,Africa
+Slovenia,Triathlon,2016,1,Europe
+Slovakia,Triathlon,2016,1,Europe
+Russia,Triathlon,2016,6,Europe
+Russia,Trampolining,2016,3,Europe
+Russia,Golf,2016,1,Europe
+Russia,Beach Volleyball,2016,6,Europe
+Qatar,Beach Volleyball,2016,2,Asia
+Puerto Rico,Triathlon,2016,1,North America
+Portugal,Triathlon,2016,3,Europe
+Portugal,Trampolining,2016,2,Europe
+Portugal,Golf,2016,2,Europe
+Poland,Triathlon,2016,1,Europe
+Poland,Beach Volleyball,2016,6,Europe
+Philippines,Golf,2016,1,Asia
+Paraguay,Golf,2016,2,South America
+Norway,Triathlon,2016,1,Europe
+Norway,Golf,2016,3,Europe
+New Zealand,Triathlon,2016,4,Oceana
+New Zealand,Trampolining,2016,1,Oceana
+New Zealand,Rugby Sevens,2016,25,Oceana
+New Zealand,Golf,2016,3,Oceana
+Netherlands,Triathlon,2016,1,Europe
+Netherlands,Golf,2016,1,Europe
+Netherlands,Beach Volleyball,2016,8,Europe
+Morocco,Golf,2016,1,Africa
+Mexico,Triathlon,2016,5,North America
+Mexico,Golf,2016,3,North America
+Mexico,Beach Volleyball,2016,2,North America
+Mauritius,Triathlon,2016,1,Africa
+Malaysia,Golf,2016,4,Asia
+Latvia,Beach Volleyball,2016,2,Europe
+Kenya,Rugby Sevens,2016,24,Africa
+Kazakhstan,Trampolining,2016,1,Asia
+Jordan,Triathlon,2016,1,Asia
+Japan,Triathlon,2016,4,Asia
+Japan,Trampolining,2016,3,Asia
+Japan,Rugby Sevens,2016,25,Asia
+Japan,Golf,2016,4,Asia
+Italy,Triathlon,2016,4,Europe
+Italy,Golf,2016,4,Europe
+Italy,Beach Volleyball,2016,6,Europe
+Israel,Triathlon,2016,1,Asia
+Israel,Golf,2016,1,Asia
+Ireland,Triathlon,2016,2,Europe
+Ireland,Golf,2016,4,Europe
+India,Golf,2016,3,Asia
+Hungary,Triathlon,2016,4,Europe
+Hong Kong,Golf,2016,1,Asia
+Great Britain,Triathlon,2016,6,Europe
+Great Britain,Trampolining,2016,3,Europe
+Great Britain,Rugby Sevens,2016,24,Europe
+Great Britain,Golf,2016,4,Europe
+Germany,Triathlon,2016,2,Europe
+Germany,Trampolining,2016,1,Europe
+Germany,Golf,2016,4,Europe
+Germany,Beach Volleyball,2016,6,Europe
+Georgia,Trampolining,2016,1,Asia
+France,Triathlon,2016,5,Europe
+France,Trampolining,2016,2,Europe
+France,Rugby Sevens,2016,25,Europe
+France,Golf,2016,4,Europe
+Finland,Golf,2016,4,Europe
+Fiji,Rugby Sevens,2016,26,Oceana
+Estonia,Triathlon,2016,1,Europe
+Egypt,Beach Volleyball,2016,2,Africa
+Ecuador,Triathlon,2016,1,South America
+Denmark,Triathlon,2016,1,Europe
+Denmark,Golf,2016,4,Europe
+Czech Republic,Triathlon,2016,1,Europe
+Czech Republic,Golf,2016,1,Europe
+Czech Republic,Beach Volleyball,2016,2,Europe
+Cuba,Beach Volleyball,2016,2,North America
+Costa Rica,Triathlon,2016,1,North America
+Costa Rica,Beach Volleyball,2016,2,North America
+Colombia,Rugby Sevens,2016,12,South America
+Colombia,Golf,2016,1,South America
+Chinese Taipei,Golf,2016,4,Asia
+China,Triathlon,2016,2,Asia
+China,Trampolining,2016,4,Asia
+China,Golf,2016,4,Asia
+China,Beach Volleyball,2016,2,Asia
+Chile,Triathlon,2016,1,South America
+Chile,Golf,2016,1,South America
+Chile,Beach Volleyball,2016,2,South America
+Canada,Triathlon,2016,5,North America
+Canada,Trampolining,2016,2,North America
+Canada,Rugby Sevens,2016,12,North America
+Canada,Golf,2016,4,North America
+Canada,Beach Volleyball,2016,8,North America
+Brazil,Triathlon,2016,2,South America
+Brazil,Trampolining,2016,1,South America
+Brazil,Rugby Sevens,2016,25,South America
+Brazil,Golf,2016,3,South America
+Brazil,Beach Volleyball,2016,8,South America
+Bermuda,Triathlon,2016,1,North America
+Belgium,Triathlon,2016,4,Europe
+Belgium,Golf,2016,3,Europe
+Belarus,Trampolining,2016,3,Europe
+Barbados,Triathlon,2016,1,North America
+Bangladesh,Golf,2016,1,Asia
+Azerbaijan,Triathlon,2016,1,Asia
+Austria,Triathlon,2016,4,Europe
+Austria,Golf,2016,2,Europe
+Austria,Beach Volleyball,2016,4,Europe
+Australia,Triathlon,2016,6,Oceana
+Australia,Trampolining,2016,1,Oceana
+Australia,Rugby Sevens,2016,25,Oceana
+Australia,Golf,2016,4,Oceana
+Australia,Beach Volleyball,2016,4,Oceana
+Argentina,Triathlon,2016,2,South America
+Argentina,Rugby Sevens,2016,13,South America
+Argentina,Golf,2016,2,South America
+Argentina,Beach Volleyball,2016,2,South America
