@@ -5,23 +5,24 @@
     <meta charset="utf-8">
     <title>Dataviz - Olympics</title>
 
-    <link rel="stylesheet"/type="text/css" href="style.css">
-    <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="../assets/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet"/type="text/css" href="./css/style.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../assets/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Google Analytics tracking code -->
@@ -37,59 +38,50 @@
     <!-- JS Dependencies -->
 
     <!-- Jarallax -->
-    <script src="https://unpkg.com/jarallax@1.10/dist/jarallax.min.js"></script>
-    <!-- Include it if you want to use Video parallax -->
-    <script src="https://unpkg.com/jarallax@1.10/dist/jarallax-video.min.js"></script>
-    <!-- Include it if you want to parallax any element -->
-    <script src="https://unpkg.com/jarallax@1.10/dist/jarallax-element.min.js"></script>
+    <script src="./js/jarallax.min.js"></script>
+    <script src="./js/jarallax-video.min.js"></script>
+    <script src="./js/jarallax-element.min.js"></script>
 
 
+        <!-- load D3js -->
+        <script src="https://d3plus.org/js/d3.js"></script>
+
+        <!-- load D3plus after D3js -->
+        <script src="https://d3plus.org/js/d3plus.js"></script>
+
+    <script src="./js/countries-bubbles.js"></script>
+    <!-- <script src="./js/d3.js"></script> -->
+    <!-- <script src="./js/d3.min.js"></script> -->
     <!-- <script src="https://d3js.org/d3-queue.v3.min.js"></script> -->
-    <script src="countries-bubbles.js"></script>
+    <!-- <script src="https://d3plus.org/js/d3plus-viz.v0.11.full.min.js"></script> -->
+
+    <!-- <script src="./js/d3plus.js"></script> -->
+    <!-- <script src="https://d3plus.org/js/d3plus.v2.0.0-alpha.16.full.min.js"></script> -->
 </head>
 <body>
 
     <!-- Title -->
     <div class="jarallax intertitle">
-        <!-- <img class="jarallax-img" src="../assets/images/olympics_2.jpg" alt=""> -->
+        <!-- <img class="jarallax-img" src="./images/olympics_2.jpg" alt=""> -->
         <h1>Dataviz - Olympics</h1>
     </div>
 
     <div class="jarallax intertitle">
-        <img class="jarallax-img" src="../assets/images/olympics_2.jpg" alt="">
+        <img class="jarallax-img" src="./images/olympics_2.jpg" alt="">
         <h1>The Countries</h1>
     </div>
 
     <!-- Story 0 -->
     <div id="story-0" class="jarallax">
-        <img class="jarallax-img" src="../assets/images/olympics.jpg" alt="">
-        <script src="https://d3js.org/d3.v4.min.js"></script>
-        <div id="controls">
-            <span>
-                <label><input id="combine" type="radio" name="grouping" value="combine" checked><span>Combine</span></label>
-                <label><input id="continents" type="radio" name="grouping" value="continents"><span>Continents</span></label>
-                <label><input id="country-centers" type="radio" name="grouping" value="country-centers"><span>Country Centers</span></label>
-                <label><input id="population" type="radio" name="grouping" value="population"><span>Medals</span></label>
-            </span>
-            <span style="visibility: hidden">
-                <label><input id="colors" type="radio" name="fill" value="colors" checked>Colors</label>
-                <label><input id="flags" type="radio" name="fill" value="flags">Flags</label>
-            </span>
-        </div>
-        <div id="country-info"></div>
-        <div id="bubble-chart"></div>
+        <img class="jarallax-img" src="./images/olympics.jpg" alt="">
+        
 
-        <script>
-        d3.queue()
-        .defer(d3.csv, "d3_bubbles.csv")
-        .defer(d3.json, "continent-names.json")
-        .await(createBubbleChart);
-        </script>
+        <iframe src="medals-bubbles.html" width="100%" height="100%" allowtransparency="true"></iframe>
     </div>
 
     <!-- Story 1-->
     <div id="story-1" class="jarallax">
-        <img class="jarallax-img" src="../assets/images/olympics_1.jpg" alt="">
+        <img class="jarallax-img" src="./images/olympics_1.jpg" alt="">
         <div class='tableauPlaceholder' id='viz1524237487196' style='position: relative'>
             <noscript><a href='#'><img alt='Tableau de bord 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Me&#47;MedailsGO&#47;Tableaudebord1&#47;1_rss.png' style='border: none' /></a></noscript>
             <object class='tableauViz'  style='display:none;'>
@@ -145,17 +137,13 @@
     </div>
 
     <div class="jarallax intertitle">
-        <img class="jarallax-img" src="../assets/images/olympics_2.jpg" alt="">
+        <img class="jarallax-img" src="./images/olympics_2.jpg" alt="">
         <h1>The Sports</h1>
     </div>
 
     <!-- Story 2  -->
     <div id="story-2" class="jarallax">
-        <img class="jarallax-img" src="../assets/images/track.jpg" alt="">
-        <!-- load D3js -->
-        <script src="https://d3plus.org/js/d3.js"></script>
-        <!-- load D3plus after D3js -->
-        <script src="https://d3plus.org/js/d3plus.js"></script>
+        <img class="jarallax-img" src="./images/track.jpg" alt="">
         <div class="container">
             <!-- create container element for visualization -->
             <div id="niche-visualization" class="left-container"></div>
@@ -172,25 +160,11 @@
                     </div>
 
                 </div>
-                <script>
-                // sample data array
-                var my_data = [{ "Country": "Venezuela", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 2, "ContinentCode": "South America" }, { "Country": "United States", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 8, "ContinentCode": "North America" }, { "Country": "Tunisia", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 2, "ContinentCode": "Africa" }, { "Country": "Switzerland", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 4, "ContinentCode": "Europe" }, { "Country": "Spain", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 4, "ContinentCode": "Europe" }, { "Country": "Russia", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 6, "ContinentCode": "Europe" }, { "Country": "Qatar", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 2, "ContinentCode": "Asia" }, { "Country": "Poland", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 6, "ContinentCode": "Europe" }, { "Country": "Netherlands", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 8, "ContinentCode": "Europe" }, { "Country": "Mexico", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 2, "ContinentCode": "North America" }, { "Country": "Latvia", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 2, "ContinentCode": "Europe" }, { "Country": "Italy", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 6, "ContinentCode": "Europe" }, { "Country": "Germany", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 6, "ContinentCode": "Europe" }, { "Country": "Egypt", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 2, "ContinentCode": "Africa" }, { "Country": "Czech Republic", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 2, "ContinentCode": "Europe" }, { "Country": "Cuba", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 2, "ContinentCode": "North America" }, { "Country": "Costa Rica", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 2, "ContinentCode": "North America" }, { "Country": "China", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 2, "ContinentCode": "Asia" }, { "Country": "Chile", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 2, "ContinentCode": "South America" }, { "Country": "Canada", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 8, "ContinentCode": "North America" }, { "Country": "Brazil", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 8, "ContinentCode": "South America" }, { "Country": "Austria", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 4, "ContinentCode": "Europe" }, { "Country": "Australia", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 4, "ContinentCode": "Oceana" }, { "Country": "Argentina", "Sport": "Beach Volleyball", "Year": 2016, "Participants": 2, "ContinentCode": "South America" }, { "Country": "Venezuela", "Sport": "Golf", "Year": 2016, "Participants": 1, "ContinentCode": "South America" }, { "Country": "United States", "Sport": "Golf", "Year": 2016, "Participants": 7, "ContinentCode": "North America" }, { "Country": "Thailand", "Sport": "Golf", "Year": 2016, "Participants": 4, "ContinentCode": "Asia" }, { "Country": "Switzerland", "Sport": "Golf", "Year": 2016, "Participants": 2, "ContinentCode": "Europe" }, { "Country": "Sweden", "Sport": "Golf", "Year": 2016, "Participants": 4, "ContinentCode": "Europe" }, { "Country": "Spain", "Sport": "Golf", "Year": 2016, "Participants": 4, "ContinentCode": "Europe" }, { "Country": "South Korea", "Sport": "Golf", "Year": 2016, "Participants": 6, "ContinentCode": "Asia" }, { "Country": "South Africa", "Sport": "Golf", "Year": 2016, "Participants": 4, "ContinentCode": "Africa" }, { "Country": "Russia", "Sport": "Golf", "Year": 2016, "Participants": 1, "ContinentCode": "Europe" }, { "Country": "Portugal", "Sport": "Golf", "Year": 2016, "Participants": 2, "ContinentCode": "Europe" }, { "Country": "Philippines", "Sport": "Golf", "Year": 2016, "Participants": 1, "ContinentCode": "Asia" }, { "Country": "Paraguay", "Sport": "Golf", "Year": 2016, "Participants": 2, "ContinentCode": "South America" }, { "Country": "Norway", "Sport": "Golf", "Year": 2016, "Participants": 3, "ContinentCode": "Europe" }, { "Country": "New Zealand", "Sport": "Golf", "Year": 2016, "Participants": 3, "ContinentCode": "Oceana" }, { "Country": "Netherlands", "Sport": "Golf", "Year": 2016, "Participants": 1, "ContinentCode": "Europe" }, { "Country": "Morocco", "Sport": "Golf", "Year": 2016, "Participants": 1, "ContinentCode": "Africa" }, { "Country": "Mexico", "Sport": "Golf", "Year": 2016, "Participants": 3, "ContinentCode": "North America" }, { "Country": "Malaysia", "Sport": "Golf", "Year": 2016, "Participants": 4, "ContinentCode": "Asia" }, { "Country": "Japan", "Sport": "Golf", "Year": 2016, "Participants": 4, "ContinentCode": "Asia" }, { "Country": "Italy", "Sport": "Golf", "Year": 2016, "Participants": 4, "ContinentCode": "Europe" }, { "Country": "Israel", "Sport": "Golf", "Year": 2016, "Participants": 1, "ContinentCode": "Asia" }, { "Country": "Ireland", "Sport": "Golf", "Year": 2016, "Participants": 4, "ContinentCode": "Europe" }, { "Country": "India", "Sport": "Golf", "Year": 2016, "Participants": 3, "ContinentCode": "Asia" }, { "Country": "Hong Kong", "Sport": "Golf", "Year": 2016, "Participants": 1, "ContinentCode": "Asia" }, { "Country": "Great Britain", "Sport": "Golf", "Year": 2016, "Participants": 4, "ContinentCode": "Europe" }, { "Country": "Germany", "Sport": "Golf", "Year": 2016, "Participants": 4, "ContinentCode": "Europe" }, { "Country": "France", "Sport": "Golf", "Year": 2016, "Participants": 4, "ContinentCode": "Europe" }, { "Country": "Finland", "Sport": "Golf", "Year": 2016, "Participants": 4, "ContinentCode": "Europe" }, { "Country": "Denmark", "Sport": "Golf", "Year": 2016, "Participants": 4, "ContinentCode": "Europe" }, { "Country": "Czech Republic", "Sport": "Golf", "Year": 2016, "Participants": 1, "ContinentCode": "Europe" }, { "Country": "Colombia", "Sport": "Golf", "Year": 2016, "Participants": 1, "ContinentCode": "South America" }, { "Country": "Chinese Taipei", "Sport": "Golf", "Year": 2016, "Participants": 4, "ContinentCode": "Asia" }, { "Country": "China", "Sport": "Golf", "Year": 2016, "Participants": 4, "ContinentCode": "Asia" }, { "Country": "Chile", "Sport": "Golf", "Year": 2016, "Participants": 1, "ContinentCode": "South America" }, { "Country": "Canada", "Sport": "Golf", "Year": 2016, "Participants": 4, "ContinentCode": "North America" }, { "Country": "Brazil", "Sport": "Golf", "Year": 2016, "Participants": 3, "ContinentCode": "South America" }, { "Country": "Belgium", "Sport": "Golf", "Year": 2016, "Participants": 3, "ContinentCode": "Europe" }, { "Country": "Bangladesh", "Sport": "Golf", "Year": 2016, "Participants": 1, "ContinentCode": "Asia" }, { "Country": "Austria", "Sport": "Golf", "Year": 2016, "Participants": 2, "ContinentCode": "Europe" }, { "Country": "Australia", "Sport": "Golf", "Year": 2016, "Participants": 4, "ContinentCode": "Oceana" }, { "Country": "Argentina", "Sport": "Golf", "Year": 2016, "Participants": 2, "ContinentCode": "South America" }, { "Country": "United States", "Sport": "Rugby Sevens", "Year": 2016, "Participants": 25, "ContinentCode": "North America" }, { "Country": "Spain", "Sport": "Rugby Sevens", "Year": 2016, "Participants": 25, "ContinentCode": "Europe" }, { "Country": "South Africa", "Sport": "Rugby Sevens", "Year": 2016, "Participants": 13, "ContinentCode": "Africa" }, { "Country": "New Zealand", "Sport": "Rugby Sevens", "Year": 2016, "Participants": 25, "ContinentCode": "Oceana" }, { "Country": "Kenya", "Sport": "Rugby Sevens", "Year": 2016, "Participants": 24, "ContinentCode": "Africa" }, { "Country": "Japan", "Sport": "Rugby Sevens", "Year": 2016, "Participants": 25, "ContinentCode": "Asia" }, { "Country": "Great Britain", "Sport": "Rugby Sevens", "Year": 2016, "Participants": 24, "ContinentCode": "Europe" }, { "Country": "France", "Sport": "Rugby Sevens", "Year": 2016, "Participants": 25, "ContinentCode": "Europe" }, { "Country": "Fiji", "Sport": "Rugby Sevens", "Year": 2016, "Participants": 26, "ContinentCode": "Oceana" }, { "Country": "Colombia", "Sport": "Rugby Sevens", "Year": 2016, "Participants": 12, "ContinentCode": "South America" }, { "Country": "Canada", "Sport": "Rugby Sevens", "Year": 2016, "Participants": 12, "ContinentCode": "North America" }, { "Country": "Brazil", "Sport": "Rugby Sevens", "Year": 2016, "Participants": 25, "ContinentCode": "South America" }, { "Country": "Australia", "Sport": "Rugby Sevens", "Year": 2016, "Participants": 25, "ContinentCode": "Oceana" }, { "Country": "Argentina", "Sport": "Rugby Sevens", "Year": 2016, "Participants": 13, "ContinentCode": "South America" }, { "Country": "Uzbekistan", "Sport": "Trampolining", "Year": 2016, "Participants": 1, "ContinentCode": "Asia" }, { "Country": "United States", "Sport": "Trampolining", "Year": 2016, "Participants": 2, "ContinentCode": "North America" }, { "Country": "Ukraine", "Sport": "Trampolining", "Year": 2016, "Participants": 1, "ContinentCode": "Europe" }, { "Country": "Russia", "Sport": "Trampolining", "Year": 2016, "Participants": 3, "ContinentCode": "Europe" }, { "Country": "Portugal", "Sport": "Trampolining", "Year": 2016, "Participants": 2, "ContinentCode": "Europe" }, { "Country": "New Zealand", "Sport": "Trampolining", "Year": 2016, "Participants": 1, "ContinentCode": "Oceana" }, { "Country": "Kazakhstan", "Sport": "Trampolining", "Year": 2016, "Participants": 1, "ContinentCode": "Asia" }, { "Country": "Japan", "Sport": "Trampolining", "Year": 2016, "Participants": 3, "ContinentCode": "Asia" }, { "Country": "Great Britain", "Sport": "Trampolining", "Year": 2016, "Participants": 3, "ContinentCode": "Europe" }, { "Country": "Germany", "Sport": "Trampolining", "Year": 2016, "Participants": 1, "ContinentCode": "Europe" }, { "Country": "Georgia", "Sport": "Trampolining", "Year": 2016, "Participants": 1, "ContinentCode": "Asia" }, { "Country": "France", "Sport": "Trampolining", "Year": 2016, "Participants": 2, "ContinentCode": "Europe" }, { "Country": "China", "Sport": "Trampolining", "Year": 2016, "Participants": 4, "ContinentCode": "Asia" }, { "Country": "Canada", "Sport": "Trampolining", "Year": 2016, "Participants": 2, "ContinentCode": "North America" }, { "Country": "Brazil", "Sport": "Trampolining", "Year": 2016, "Participants": 1, "ContinentCode": "South America" }, { "Country": "Belarus", "Sport": "Trampolining", "Year": 2016, "Participants": 3, "ContinentCode": "Europe" }, { "Country": "Australia", "Sport": "Trampolining", "Year": 2016, "Participants": 1, "ContinentCode": "Oceana" }, { "Country": "United States", "Sport": "Triathlon", "Year": 2016, "Participants": 6, "ContinentCode": "North America" }, { "Country": "Ukraine", "Sport": "Triathlon", "Year": 2016, "Participants": 2, "ContinentCode": "Europe" }, { "Country": "Switzerland", "Sport": "Triathlon", "Year": 2016, "Participants": 4, "ContinentCode": "Europe" }, { "Country": "Sweden", "Sport": "Triathlon", "Year": 2016, "Participants": 1, "ContinentCode": "Europe" }, { "Country": "Spain", "Sport": "Triathlon", "Year": 2016, "Participants": 6, "ContinentCode": "Europe" }, { "Country": "South Africa", "Sport": "Triathlon", "Year": 2016, "Participants": 4, "ContinentCode": "Africa" }, { "Country": "Slovenia", "Sport": "Triathlon", "Year": 2016, "Participants": 1, "ContinentCode": "Europe" }, { "Country": "Slovakia", "Sport": "Triathlon", "Year": 2016, "Participants": 1, "ContinentCode": "Europe" }, { "Country": "Russia", "Sport": "Triathlon", "Year": 2016, "Participants": 6, "ContinentCode": "Europe" }, { "Country": "Puerto Rico", "Sport": "Triathlon", "Year": 2016, "Participants": 1, "ContinentCode": "North America" }, { "Country": "Portugal", "Sport": "Triathlon", "Year": 2016, "Participants": 3, "ContinentCode": "Europe" }, { "Country": "Poland", "Sport": "Triathlon", "Year": 2016, "Participants": 1, "ContinentCode": "Europe" }, { "Country": "Norway", "Sport": "Triathlon", "Year": 2016, "Participants": 1, "ContinentCode": "Europe" }, { "Country": "New Zealand", "Sport": "Triathlon", "Year": 2016, "Participants": 4, "ContinentCode": "Oceana" }, { "Country": "Netherlands", "Sport": "Triathlon", "Year": 2016, "Participants": 1, "ContinentCode": "Europe" }, { "Country": "Mexico", "Sport": "Triathlon", "Year": 2016, "Participants": 5, "ContinentCode": "North America" }, { "Country": "Mauritius", "Sport": "Triathlon", "Year": 2016, "Participants": 1, "ContinentCode": "Africa" }, { "Country": "Jordan", "Sport": "Triathlon", "Year": 2016, "Participants": 1, "ContinentCode": "Asia" }, { "Country": "Japan", "Sport": "Triathlon", "Year": 2016, "Participants": 4, "ContinentCode": "Asia" }, { "Country": "Italy", "Sport": "Triathlon", "Year": 2016, "Participants": 4, "ContinentCode": "Europe" }, { "Country": "Israel", "Sport": "Triathlon", "Year": 2016, "Participants": 1, "ContinentCode": "Asia" }, { "Country": "Ireland", "Sport": "Triathlon", "Year": 2016, "Participants": 2, "ContinentCode": "Europe" }, { "Country": "Hungary", "Sport": "Triathlon", "Year": 2016, "Participants": 4, "ContinentCode": "Europe" }, { "Country": "Great Britain", "Sport": "Triathlon", "Year": 2016, "Participants": 6, "ContinentCode": "Europe" }, { "Country": "Germany", "Sport": "Triathlon", "Year": 2016, "Participants": 2, "ContinentCode": "Europe" }, { "Country": "France", "Sport": "Triathlon", "Year": 2016, "Participants": 5, "ContinentCode": "Europe" }, { "Country": "Estonia", "Sport": "Triathlon", "Year": 2016, "Participants": 1, "ContinentCode": "Europe" }, { "Country": "Ecuador", "Sport": "Triathlon", "Year": 2016, "Participants": 1, "ContinentCode": "South America" }, { "Country": "Denmark", "Sport": "Triathlon", "Year": 2016, "Participants": 1, "ContinentCode": "Europe" }, { "Country": "Czech Republic", "Sport": "Triathlon", "Year": 2016, "Participants": 1, "ContinentCode": "Europe" }, { "Country": "Costa Rica", "Sport": "Triathlon", "Year": 2016, "Participants": 1, "ContinentCode": "North America" }, { "Country": "China", "Sport": "Triathlon", "Year": 2016, "Participants": 2, "ContinentCode": "Asia" }, { "Country": "Chile", "Sport": "Triathlon", "Year": 2016, "Participants": 1, "ContinentCode": "South America" }, { "Country": "Canada", "Sport": "Triathlon", "Year": 2016, "Participants": 5, "ContinentCode": "North America" }, { "Country": "Brazil", "Sport": "Triathlon", "Year": 2016, "Participants": 2, "ContinentCode": "South America" }, { "Country": "Bermuda", "Sport": "Triathlon", "Year": 2016, "Participants": 1, "ContinentCode": "North America" }, { "Country": "Belgium", "Sport": "Triathlon", "Year": 2016, "Participants": 4, "ContinentCode": "Europe" }, { "Country": "Barbados", "Sport": "Triathlon", "Year": 2016, "Participants": 1, "ContinentCode": "North America" }, { "Country": "Azerbaijan", "Sport": "Triathlon", "Year": 2016, "Participants": 1, "ContinentCode": "Asia" }, { "Country": "Austria", "Sport": "Triathlon", "Year": 2016, "Participants": 4, "ContinentCode": "Europe" }, { "Country": "Australia", "Sport": "Triathlon", "Year": 2016, "Participants": 6, "ContinentCode": "Oceana" }, { "Country": "Argentina", "Sport": "Triathlon", "Year": 2016, "Participants": 2, "ContinentCode": "South America" }]
-                // instantiate d3plus
-                var visualization = d3plus.viz()
-                .container("#niche-visualization")     // container DIV to hold the visualization
-                .data(my_data)     // data to use with the visualization
-                .type("bubbles")       // visualization type
-                .id(["Sport", "Country"]) // nesting keys
-                .depth(1)              // 0-based depth
-                .size("Participants")         // key name to size bubbles
-                .color("ContinentCode")        // color by each group
-                .background("transparent")
-                .draw()                // finally, draw the visualization!
-                </script>
+
             </div>
 
             <div class="jarallax intertitle">
-                <img class="jarallax-img" src="../assets/images/olympics_2.jpg" alt="">
+                <img class="jarallax-img" src="./images/olympics_2.jpg" alt="">
                 <h1>The Athletes</h1>
             </div>
 
@@ -226,7 +200,7 @@
 
             <!-- Story 4 -->
             <div id="story-4" class="jarallax">
-                <img class="jarallax-img" src="../assets/images/swimmer2.jpg" alt="">
+                <img class="jarallax-img" src="./images/swimmer2.jpg" alt="">
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
                 <div class="gender-general">
                     <div class="gender-text">
@@ -236,7 +210,7 @@
 
                         <div class="gender-commentaire">
                             <p id='pText'>  </p>
-                            <img src="../assets/images/women_men.png" alt="women_men" class="gender-img" id="gender-img">
+                            <img src="./images/women_men.png" alt="women_men" class="gender-img" id="gender-img">
                             <button id="gender-reponse" onclick="genderUpdateLineData()"> Réponse </button>
                         </div>
 
@@ -401,79 +375,13 @@
 
             <!-- Story 5 -->
             <div id="story-5" class="jarallax">
-                <img class="jarallax-img" src="../assets/images/olympics.jpg" alt="">
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.6.0/d3.js"></script>
-                <script src="./participants.js"></script>
-
-                <button id="participants-change-data" onclick="changeDataParticipants()">4+ Competitions</button>
-                <div id="participants-chart"><svg></svg></div>
-
-                <script>
-                console.log('participants story');
-
-                d3.csv('participants3.csv', function(error, data) {
-                    if (error) {
-                        console.error('Error getting or parsing the data.');
-                        throw error;
-                    }
-                    // selection.datum() returns the bound datum for the first element in the selection and
-                    //  doesn't join the specified array of data with the selected elements
-                    var chart = participantsBubbleChart().width(1200).height(800);
-                    d3.select('#participants-chart').datum(data).call(chart);
-                });
-                var participationsNumber = 4,
-                increaseParticipationsNumber = true;
-                function changeDataParticipants(){
-
-                    d3.csv('participants3.csv', function(error, data) {
-                        if (error) {
-                            console.error('Error getting or parsing the data.');
-                            throw error;
-                        }
-                        //on ne garde que les données pour lesquels la participation est sup a number
-                        var filteredDataParticipants = data.filter(function(d){
-                            return d.Participations > participationsNumber ;
-                        });
-                        if((increaseParticipationsNumber && participationsNumber < 10)||(!increaseParticipationsNumber && participationsNumber < 4)){
-                            increaseParticipationsNumber = true;
-                            participationsNumber += 1;
-                        }
-                        else {
-                            increaseParticipationsNumber = false;
-                            participationsNumber -= 1;
-                        }
-                        //Replace value in the button
-                        document.getElementById("participants-change-data").innerHTML = parseInt(participationsNumber) + '+ Competitons';
-
-                        //TODO: match case for strength
-                        if(!increaseParticipationsNumber){
-                            // console.log("test")
-                            var chart = bubbleChart().width(1600).height(1000);
-                            d3.select('#participants-chart').datum(filteredDataParticipants).call(chart);
-                        }
-
-                        //rejoin data
-                        var circle = d3.select('#participants-chart').selectAll("circle")
-                        .data(filteredDataParticipants);
-
-                        if(increaseParticipationsNumber) {
-                            circle.exit().remove();//remove unneeded circles
-                        }
-
-                        var force = -10;
-                        d3.forceSimulation(filteredDataParticipants)
-                        .force("charge", d3.forceManyBody().strength([force]))
-                        .force("x", d3.forceX())
-                        .force("y", d3.forceY());
-                    });
-                }
-
-                </script>
+                <img class="jarallax-img" src="./images/olympics.jpg" alt="">
+                <iframe src="participants.html" width="100%" height="100%" allowtransparency="true"></iframe>
             </div>
 
             <!-- Title -->
             <div class="jarallax intertitle">
-                <!-- <img class="jarallax-img" src="../assets/images/olympics_2.jpg" alt=""> -->
+                <!-- <img class="jarallax-img" src="./images/olympics_2.jpg" alt=""> -->
                 <h1>The End</h1>
             </div>
             <script>

@@ -1,0 +1,13 @@
+
+/* svg {
+  border: 1px solid #ddd;
+} */
+
+circle {
+  stroke: white;
+  stroke-width: 1.5;
+}
+
+.continent-key-element text {
+  fill: white;
+}
