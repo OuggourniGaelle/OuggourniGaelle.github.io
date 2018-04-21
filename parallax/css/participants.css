@@ -1,7 +1,10 @@
-
-/* svg {
-  border: 1px solid #ddd;
-} */
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
 
 circle {
   stroke: white;
@@ -10,4 +13,54 @@ circle {
 
 .continent-key-element text {
   fill: white;
+}
+
+#left-container {
+    /* top:50%; */
+    float: left;
+    width: 65%;
+}
+
+#description{
+    position: absolute;
+    margin-left: 10px;
+}
+
+#right-container {
+    float: left;
+    width: 35%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.75);
+}
+
+
+.slider {
+    -webkit-appearance: none;
+    width: 30%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
 }
