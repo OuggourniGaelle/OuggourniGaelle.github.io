@@ -14,37 +14,24 @@
     <!-- Add icon to display on tab -->
     <link rel="icon" href="https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/2014/02/Olympic-logo.png">
 
-    <!-- load D3js -->
-    <script src="https://d3plus.org/js/d3.js"></script>
-
-    <!-- load D3plus after D3js -->
-    <script src="https://d3plus.org/js/d3plus.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
 
-        </ul>
-    </nav>
-
-    <h1>Winter Olympics - How many people are countries sending to the Olympics? How many of them are actually winning medals? </h1>
+    <h1>Evolution of countries` performance</h1>
     <p>
-        First of all, we can see a general trend of more athletes being sent to compete in the Olympics overall, across all countries.
-    <p>Still, does that mean that all of them are winning more medals? That depends on the country! </p>
+        First of all, we can see a general trend of more athletes being sent to compete in the Olympics overall, across all countries. <br/>
+        Still, does that mean that all of them are winning more medals? That depends on the country!
 
-    <p>We distinguish two types of countries:</p>
+    <p>We distinguish two types of countries:
     <ul>
         <li> those who have a steady presence at the games, sending a significant number of athletes each year. Their success varies somewhat, but they're keeping it steady!</li>
         <li> those who send few competitors at the Olympics, so their success rate occasionally spikes at 100% or more (when there are multiple medals per competitor for example). Still, their general trend is more of a miss on the long run...</li>
     </ul>
+    </p>
     <p>
         <i>
             Choose your own country from the scroll down list to see what type of a performer it is over the years!<br />
-            Then scroll down to check out on how many shoulders that performance really rests!
+            Select it in the graph, then scroll down to check out on how many shoulders that performance really rests!
         </i>
     </p>
     </p>
@@ -55,38 +42,6 @@
     <p>
     </p>
 
-    <h1> Niche sports countries - Wich countries are engaging in the least mainstream sports? </h1>
-    <p>
-        We'll define niche sports as those attracting less than 400 participants per year.<br />
-        Let's take a look at which are these lesser known sports for the Summer Games, and the countries that send athletes to these events over the years...
-    </p>
-    <p>
-        <i>
-            The size of the group of bubbles is the total number of participants per sport. <br />
-            Each bubble is a country participating in a niche sport. Hover over the bubbles to see the country name and how many athletes from that country took part in the niche event. <br />
-            The color of the bubbles represents the continent. Hover over the legend at the bottom to see the countries corresponding to each continent.<br />
-            The default year shown is 2012. Choose one year or a time frame from the bottom or just hit the play button to see hipster history unfold!
-        </i>
-    </p>
-
-    <div id="viz_niche"></div>
-    <script>
-
-        // instantiate d3plus
-        var visualization = d3plus.viz()
-            .container("#viz_niche")     // container DIV to hold the visualization
-            .data("./niche_summer_conti.json")     // data to use with the visualization
-            .type("bubbles")       // visualization type
-            .id(["Sport", "Country"]) // nesting keys
-            .depth(1)              // 0-based depth
-            .size("Participants")         // key name to size bubbles
-            .color("ContinentCode")        // color by each group
-            .time({
-                "value": "Year",
-                "solo": 2012
-            })
-            .draw()
-    </script>
-
+    
 </body>
 </html>
