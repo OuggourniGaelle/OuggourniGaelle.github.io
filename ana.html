@@ -58,24 +58,24 @@
     <h1> Niche sports countries - Wich countries are engaging in the least mainstream sports? </h1>
     <p>
         We'll define niche sports as those attracting less than 400 participants per year.<br />
-        Let's take a look at which are these lesser known sports and the countries that sent athletes to these events, for the 2016 Summer Games...
+        Let's take a look at which are these lesser known sports for the Summer Games, and the countries that send athletes to these events over the years...
     </p>
     <p>
         <i>
             The size of the group of bubbles is the total number of participants per sport. <br />
             Each bubble is a country participating in a niche sport. Hover over the bubbles to see the country name and how many athletes from that country took part in the niche event. <br />
-            The color of the bubbles represents the continent. Hover over the legend at the bottom to see the countries corresponding to each continent.
+            The color of the bubbles represents the continent. Hover over the legend at the bottom to see the countries corresponding to each continent.<br />
+            The default year shown is 2012. Choose one year or a time frame from the bottom or just hit the play button to see hipster history unfold!
         </i>
     </p>
 
     <div id="viz_niche"></div>
-
     <script>
-        
+
         // instantiate d3plus
         var visualization = d3plus.viz()
             .container("#viz_niche")     // container DIV to hold the visualization
-            .data("./niche_all_years.json")     // data to use with the visualization
+            .data("./niche_summer_conti.json")     // data to use with the visualization
             .type("bubbles")       // visualization type
             .id(["Sport", "Country"]) // nesting keys
             .depth(1)              // 0-based depth
@@ -83,9 +83,9 @@
             .color("ContinentCode")        // color by each group
             .time({
                 "value": "Year",
-                "solo": 2016
+                "solo": 2012
             })
-            .draw()   
+            .draw()
     </script>
 
 </body>
