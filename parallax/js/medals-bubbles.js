@@ -264,25 +264,7 @@ function createBubbleChart(error, countries, continentNames) {
   }
 
   function addFlagDefinitions() {
-    var defs = svg.append("defs");
-    defs.selectAll(".flag")
-    .data(countries)
-    .enter()
-    .append("pattern")
-    .attr("id", function(d) { return d.CountryCode; })
-    .attr("class", "flag")
-    .attr("width", "100%")
-    .attr("height", "100%")
-    .attr("patternContentUnits", "objectBoundingBox")
-    .append("image")
-    .attr("width", 1)
-    .attr("height", 1)
-    // xMidYMid: center the image in the circle
-    // slice: scale the image to fill the circle
-    .attr("preserveAspectRatio", "xMidYMid slice")
-    .attr("xlink:href", function(d) {
-      return "flags/" + d.CountryCode + ".svg";
-    });
+    
   }
 
   function addFillListener() {

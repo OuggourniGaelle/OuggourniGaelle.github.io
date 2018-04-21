@@ -31,7 +31,7 @@ function changeDataParticipants(){
         document.getElementById("participations").innerHTML = parseInt(participationsNumber) + ' games and more';
 
         var increaseParticipationsNumber = false;
-        if(participationsNumber > participationsNumberCompare){
+        if(participationsNumber > participationsNumberCompare || typeof participationsNumberCompare === 'undefined'){
             increaseParticipationsNumber = true;
         }
 
