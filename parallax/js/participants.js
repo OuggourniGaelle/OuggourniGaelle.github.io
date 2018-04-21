@@ -1,11 +1,77 @@
+var width = 1200,
+height=1000;
+d3.csv('./data/participants3.csv', function(error, data) {
+    if (error) {
+        console.error('Error getting or parsing the data.');
+        throw error;
+    }
+    // selection.datum() returns the bound datum for the first element in the selection and
+    //  doesn't join the specified array of data with the selected elements
+    var chart = participantsBubbleChart(-10).width(width).height(height);
+    d3.select('#participants-chart').datum(data).call(chart);
+});
+
+var participationsNumberCompare = parseInt(document.getElementById("rangeParticipations").value);
+
+function changeDataParticipants(){
+    var participationsNumber = parseInt(document.getElementById("rangeParticipations").value);
+
+    d3.csv('./data/participants3.csv', function(error, data) {
+        if (error) {
+            console.error('Error getting or parsing the data.');
+            throw error;
+        }
+
+        //on ne garde que les données pour lesquels la participation est sup a number
+        var filteredDataParticipants = data.filter(function(d){
+            return d.Participations >= parseInt(participationsNumber) ;
+        });
+
+        //Replace value in the button
+        document.getElementById("participations").innerHTML = parseInt(participationsNumber) + ' games and more';
+
+        var increaseParticipationsNumber = false;
+        if(participationsNumber > participationsNumberCompare){
+            increaseParticipationsNumber = true;
+        }
+
+        var strength = participationsNumber > 4 ? '-30':'-10';
+
+        console.log('participations',increaseParticipationsNumber, participationsNumber, participationsNumberCompare);
+        if(!increaseParticipationsNumber){
+            d3.select('#participants-chart')
+                            .selectAll("circle")
+                            .remove();
+            var chart = participantsBubbleChart(strength).width(width).height(height);
+            d3.select('#participants-chart')
+                .datum(filteredDataParticipants)
+                .call(chart);
+        }
+        else {
+            //rejoin data
+            var circle = d3.select('#participants-chart')
+                            .selectAll("circle")
+                            .data(filteredDataParticipants);
+
+            circle.exit().remove();//remove unneeded circles
+
+            d3.forceSimulation(filteredDataParticipants)
+                .force("charge", d3.forceManyBody().strength([strength]))
+                .force("x", d3.forceX())
+                .force("y", d3.forceY());
+        }
+
+        participationsNumberCompare = participationsNumber;
+    });
+}
+
 //TODO: Couleur = continent
-function participantsBubbleChart() {
+function participantsBubbleChart(strengthBubbles) {
     var width = 1200,
         height = 800,
         maxRadius = 6,
         columnForColors = "Trigram",
-        columnForRadius = "Total",
-        strength = -10;
+        columnForRadius = "Total";
 
     function chart(selection) {
         var data = selection.datum();
@@ -17,18 +83,17 @@ function participantsBubbleChart() {
             .append("div")
             .style("position", "absolute")
             .style("visibility", "hidden")
-            .style("color", "white")
+            .style("color", "black")
             .style("padding", "8px")
-            .style("background-color", "#626D71")
+            .style("background-color", "rgb(255,255,255,0.85)")
             .style("border-radius", "6px")
             .style("text-align", "center")
-            .style("font-family", "monospace")
             .style("width", "400px")
             .text("");
 
 
         var simulation = d3.forceSimulation(data)
-            .force("charge", d3.forceManyBody().strength([strength]))
+            .force("charge", d3.forceManyBody().strength([strengthBubbles]))
             .force("x", d3.forceX())
             .force("y", d3.forceY())
             .on("tick", ticked);
@@ -61,7 +126,7 @@ function participantsBubbleChart() {
             })
             .attr('transform', 'translate(' + [width / 2, height / 2] + ')')
             .on("mouseover", function(d) {
-                tooltip.html(d.Athlete.split(',')[1] + " " + d.Athlete.split(',')[0] + " from " + d.Country + "<br>" + d.Participations + " participation(s) for " + d.Total + " medal(s).<br>");
+                tooltip.html(tooltipContent(d));
                 return tooltip.style("visibility", "visible");
             })
             .on("mousemove", function() {
@@ -70,6 +135,25 @@ function participantsBubbleChart() {
             .on("mouseout", function() {
                 return tooltip.style("visibility", "hidden");
             });
+
+            function tooltipContent(d){
+                var content = "<h2>" + d.Athlete.split(',')[1] + " " + d.Athlete.split(',')[0] + "</h2>"
+                            + d.Country + "<br>"
+                            + "Sport: " + d.Sport + "<br/>"
+                            + d.Participations + " participations<br>"
+                            + d.Total + " medal(s)<br>"
+                            + "G: " + d.Gold + " - S: " + d.Silver + " - B: " + d.Bronze;
+                if(d.Athlete_unique_url === "/olympics/athletes/mi/ian-millar-1.html"){
+                    content = "<h2>Ian Millar a.k.a Captain Canada!</h2>"
+                            + "Sport: " + d.Sport + "<br/>"
+                            + "He hold the most games participations record.<br/>"
+                            + "Ian Millar appeared in 10 summer competitions<br/>"
+                            + "(from 1974 to 2012),<br/>"
+                            + "and he won his first medal in 2008."
+                            + "<img alt=\"Image illustrative de l\'article Ian Millar\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Ian_Millar_on_horse.jpg/200px-Ian_Millar_on_horse.jpg\" width=\"200\" height=\"419\">";
+                }
+                return content;
+            }
     }
 
     chart.width = function(value) {
@@ -105,11 +189,11 @@ function participantsBubbleChart() {
         return chart;
     };
 
-    chart.strength = function(value) {
-        if (!arguments.strength) {
-            return strength;
+    chart.strengthBubbles = function(value) {
+        if (!arguments.strengthBubbles) {
+            return strengthBubbles;
         }
-        strength = value;
+        strengthBubbles = value;
         return chart;
     };
 

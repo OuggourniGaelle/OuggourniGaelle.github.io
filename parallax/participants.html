@@ -2,75 +2,47 @@
 <html>
 <head>
     <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet"/type="text/css" href="./css/participants.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.6.0/d3.js"></script>
+    <script src="./js/d3.js"></script>
     <script src="./js/participants.js"></script>
 </head>
 <body>
+    <div id="container">
+        <div id="left-container">
+            <div id="description">
+                <h2 id="participations">4 games and more</h2>
+                <input id="rangeParticipations"
+                        type="range"
+                        min="4"
+                        max="10"
+                        value="4"
+                        onmouseup="changeDataParticipants()"
+                        list="tickmarks">
 
-    <button id="participants-change-data" onclick="changeDataParticipants()">4+ Competitions</button>
-    <div id="participants-chart"><svg></svg></div>
-
-    <script>
-        console.log('participants story');
-
-        d3.csv('./data/participants3.csv', function(error, data) {
-            if (error) {
-                console.error('Error getting or parsing the data.');
-                throw error;
-            }
-            // selection.datum() returns the bound datum for the first element in the selection and
-            //  doesn't join the specified array of data with the selected elements
-            var chart = participantsBubbleChart().width(1200).height(800);
-            d3.select('#participants-chart').datum(data).call(chart);
-        });
-        var participationsNumber = 4,
-        increaseParticipationsNumber = true;
-        function changeDataParticipants(){
-
-            d3.csv('participants3.csv', function(error, data) {
-                if (error) {
-                    console.error('Error getting or parsing the data.');
-                    throw error;
-                }
-                //on ne garde que les données pour lesquels la participation est sup a number
-                var filteredDataParticipants = data.filter(function(d){
-                    return d.Participations > participationsNumber ;
-                });
-                if((increaseParticipationsNumber && participationsNumber < 10)||(!increaseParticipationsNumber && participationsNumber < 4)){
-                    increaseParticipationsNumber = true;
-                    participationsNumber += 1;
-                }
-                else {
-                    increaseParticipationsNumber = false;
-                    participationsNumber -= 1;
-                }
-                //Replace value in the button
-                document.getElementById("participants-change-data").innerHTML = parseInt(participationsNumber) + '+ Competitons';
-
-                //TODO: match case for strength
-                if(!increaseParticipationsNumber){
-                    // console.log("test")
-                    var chart = bubbleChart().width(1600).height(1000);
-                    d3.select('#participants-chart').datum(filteredDataParticipants).call(chart);
-                }
-
-                //rejoin data
-                var circle = d3.select('#participants-chart').selectAll("circle")
-                .data(filteredDataParticipants);
-
-                if(increaseParticipationsNumber) {
-                    circle.exit().remove();//remove unneeded circles
-                }
-
-                var force = -10;
-                d3.forceSimulation(filteredDataParticipants)
-                .force("charge", d3.forceManyBody().strength([force]))
-                .force("x", d3.forceX())
-                .force("y", d3.forceY());
-            });
-        }
-
-    </script>
+                <datalist id="tickmarks">
+                  <option value="4" label="4">
+                  <option value="5">
+                  <option value="6">
+                  <option value="7" label="7">
+                  <option value="8">
+                  <option value="9">
+                  <option value="10" label="10">
+                </datalist>
+            </div>
+            <div id="participants-chart">
+                <svg></svg>
+            </div>
+        </div>
+        <div id="right-container">
+            <h1>They did many games</h1>
+            <p>
+                Here are all the great sportsmen and sportswomen who made more than 4 games!<br/>
+                The size of each bubble respresent the total of medals each athlete gathered.<br/>
+                The color represent the continent.
+            </p>
+            <h2>Who did the most Games?</h2>
+        </div>
+    </div>
 </body>
 </html>

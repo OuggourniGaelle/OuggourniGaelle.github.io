@@ -9,7 +9,7 @@ function createBubbleChart(error, countries, continentNames) {
   var continentColorScale = d3.scaleOrdinal(d3.schemeCategory10)
   .domain(continents.values());
 
-  var width = 1200,
+  var width = 900,
   height = 800;
   var svg,
   circles,
