@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google Analytics tracking code -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117540199-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117540199-1');
+    </script>
+
+    <!-- load D3js -->
+    <script src="https://d3plus.org/js/d3.js"></script>
+    <!-- load D3plus after D3js -->
+    <script src="https://d3plus.org/js/d3plus.js"></script>
+    <link rel="stylesheet"/type="text/css" href="./css/niche.css">
+
+</head>
+<body>
+    <div id="container">
+        <div id="left-container">
+            <div id="viz_niche"></div>
+        </div>
+        <div id="right-container">
+            <h1> Niche sports connaisseurs </h1>
+            <p>
+                We'll define niche sports as those attracting less than 400 participants per year.<br />
+                Let's take a look at which are these lesser known sports and the countries that sent representatives to these less mainstream events, for the 2016 Summer Games...
+            </p>
+            <p>
+                <i>
+                    The size of the group of bubbles is the total number of participants per sport. <br />
+                    Each bubble is a country participating in a niche sport. Hover over the bubbles to see the country name and how many athletes from that country took part in the niche event. <br />
+                    The color of the bubbles represents the continent. Hover over the legend at the bottom to see the countries corresponding to each continent.<br />
+                    The default year shown is 2012. Choose one year or a time frame from the bottom or just hit the play button to see hipster history unfold!
+                </i>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // instantiate d3plus
+        var visualization = d3plus.viz()
+            .container("#viz_niche")     // container DIV to hold the visualization
+            .data("./data/niche_summer_conti.json")     // data to use with the visualization
+            .type("bubbles")       // visualization type
+            .id(["Sport", "Country"]) // nesting keys
+            .depth(1)              // 0-based depth
+            .size("Participants")         // key name to size bubbles
+            .color("ContinentCode")        // color by each group
+            .time({
+                "value": "Year",
+                "solo": 2012
+            })
+            .background("rgba(0,0,0,0.1)")
+            .draw()
+    </script>
+
+</body>
+</html>

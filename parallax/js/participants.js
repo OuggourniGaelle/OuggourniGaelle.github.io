@@ -1,6 +1,6 @@
 var width = 1200,
 height=1000;
-d3.csv('./data/participants3.csv', function(error, data) {
+d3.csv('./data/participants.csv', function(error, data) {
     if (error) {
         console.error('Error getting or parsing the data.');
         throw error;
@@ -16,7 +16,7 @@ var participationsNumberCompare = parseInt(document.getElementById("rangePartici
 function changeDataParticipants(){
     var participationsNumber = parseInt(document.getElementById("rangeParticipations").value);
 
-    d3.csv('./data/participants3.csv', function(error, data) {
+    d3.csv('./data/participants.csv', function(error, data) {
         if (error) {
             console.error('Error getting or parsing the data.');
             throw error;
@@ -70,7 +70,7 @@ function participantsBubbleChart(strengthBubbles) {
     var width = 1200,
         height = 800,
         maxRadius = 6,
-        columnForColors = "Trigram",
+        columnForColors = "ContinentCode",
         columnForRadius = "Total";
 
     function chart(selection) {

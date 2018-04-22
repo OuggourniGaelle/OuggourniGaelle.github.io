@@ -1,0 +1,24 @@
+/* Countries bubbles story */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+#left-container {
+    /* top:50%; */
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+
+#right-container {
+    float: left;
+    width: 35%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.75);
+    padding: 10px;
+}
